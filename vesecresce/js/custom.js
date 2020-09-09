@@ -105,7 +105,7 @@ $(document).ready(function() {
   new WOW({ mobile: false }).init();
 
   /* countdown */
-  var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+  var countDownDate = new Date(2020, 10-1, 9, 12, 00, 00).getTime();
 
   // Update the count down every 1 second
   var x = setInterval(() => {
