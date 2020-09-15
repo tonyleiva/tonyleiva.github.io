@@ -411,6 +411,7 @@ a {
   height: 65px;
   margin-top: 42px;
   transition: all 0.4s ease-in-out;
+  border: 1px solid #ccc;
 }
 
 #newsletter input[type="submit"]:hover {
@@ -923,6 +924,7 @@ footer .copyright-text {
 input#name, input#email {
   color: #FFFFFF;
 }
+#newsletter p {color: #dedede;}
 #send.disabled {
   cursor: not-allowed;
   pointer-events: none;
