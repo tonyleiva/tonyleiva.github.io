@@ -24,6 +24,12 @@
 
 .modal h3 {
     color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.modal-header-content h3 {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
 }
 
 /* Modal Content */
@@ -84,7 +90,8 @@
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #cc4645;
+    background-image: linear-gradient(to bottom right, #c220ea, #1e87bb);
+    /* background-color: #cc4645; */
     color: #ffffff;
 }
 
@@ -105,10 +112,16 @@
     letter-spacing: 0.4px;
     color: #707070;
 }
+.modal-body h3 {
+    color: #707070;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+}
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #cc4645;
+    background-image: linear-gradient(to bottom right, #c220ea, #1e87bb);
+    /* background-color: #cc4645; */
     color: #ffffff;
 }
 
