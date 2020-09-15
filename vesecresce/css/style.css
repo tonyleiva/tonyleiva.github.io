@@ -205,7 +205,7 @@ a {
   color: #000;
   background-color: transparent;
 }
-
+.navbar-brand img {width: 176px;}
 
 
 /*---------------------------------------
@@ -375,6 +375,7 @@ a {
     color: #ffffff;
     padding-top: 12rem;
     padding-bottom: 12rem;
+    /* background-image: linear-gradient(to bottom right, #c220ea, #1e87bb); */
 }
 
 #newsletter .newsletter_detail {
@@ -869,37 +870,64 @@ footer .copyright-text {
 }
 
 .countdown div {
-  width: 150px;
-    height: 13rem;
-    background: linear-gradient( 
-      to bottom, 
-      rgb(181 153 153 / 90%) 50%, 
-      rgb(162 144 144 / 67%) 0 );
-    margin: 10px 3px 90px 0px;
-    font-size: 50px;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.5);
-    position: relative;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient( to bottom, rgb(125 125 125 / 13%) 50%, rgb(146 146 146 / 14%) 0 );
+  margin: 10px 5px 90px 5px;
+  font-size: 50px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 2.5rem #00000080;
+  position: relative;
 }
 
 .countdown div::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 0.14rem;
-  background-color: #17181b;
+  height: 1px;
+  background-color: #00000075;
 }
 
 .countdown div::after {
   content: attr(data-content);
-  font-size: 2.0rem;
+  font-size: 20px;
   font-weight: 400;
   position: absolute;
-  bottom: -6rem;
+  bottom: -50px;
 }
+
+#home:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  background: #0000006e;
+}
+#home img {
+  padding-top: 364px;
+  max-width: 39%;
+  height: auto;
+}
+#home h1 {
+  font-size: 34px;
+  line-height: normal;
+  margin-top: -21px;
+  padding-top: 0px;
+}
+input#name, input#email {
+  color: #FFFFFF;
+}
+#send.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+footer {text-align: center;}
 
 /*---------------------------------------
    Responsive styles            
@@ -932,7 +960,6 @@ footer .copyright-text {
 
 }
 
-
 @media (max-width: 768px) {
 
   #overview blockquote {
@@ -940,13 +967,13 @@ footer .copyright-text {
     left: 30px;
     right: 10px;
   }
+  .navbar-brand img{width: 170px;}
 
 }
 
-
 @media (max-width: 767px) {
-
   .navbar-default .navbar-brand {
+    padding-top: 0px;
     line-height: 15px;
   }
 
@@ -967,8 +994,32 @@ footer .copyright-text {
     padding-bottom: 8rem;
   }
 
-}
+  .countdown div {
+    width: 80px;
+    height: 80px;    
+    margin: 10px 3px 90px 3px;
+    font-size: 40px;
+  }
+  .countdown div::after {
+    font-size: 17px;
+    bottom: -40px;
+  }
 
+  #home h1 {
+    letter-spacing: 0px;
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  #home img {
+    padding-top: 360px;
+    max-width: 50%;
+  }
+  #home .btn {
+    margin-top: 13px;
+    padding: 8px 27px;
+  }
+
+}
 
 @media (max-width: 760px) {
 
@@ -1020,7 +1071,6 @@ footer .copyright-text {
 
 }
 
-
 @media (max-width: 650px) {
 
   #overview blockquote {
@@ -1030,7 +1080,6 @@ footer .copyright-text {
   }
 
 }
-
 
 @media (max-width: 450px) {
 
@@ -1043,5 +1092,3 @@ footer .copyright-text {
   }
 
 }
-
-
