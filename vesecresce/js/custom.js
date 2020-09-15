@@ -48,7 +48,7 @@ $(document).ready(function() {
   /*  smoothscroll
   ----------------------------------------------*/
    $(function() {
-        $('.navbar-default a, #home a, #overview a').bind('click', function(event) {
+        $('.navbar-default a, #home a').bind('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 49
@@ -78,8 +78,7 @@ $(document).ready(function() {
   $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
-       "https://tonyleiva.github.io/vesecresce/images/home-bg-slider-img1.jpg", 
-       "https://tonyleiva.github.io/vesecresce/images/home-bg-slider-img2.jpg",
+        "https://tonyleiva.github.io/vesecresce/images/images/BoraGuria_LauBaldo-8603_02.jpg",
         ],  {duration: 2000, fade: 750});
     });
   })

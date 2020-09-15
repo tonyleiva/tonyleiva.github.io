@@ -5,7 +5,8 @@
     /* Stay in place */
     z-index: 10001;
     /* Sit on top */
-    padding-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -26,7 +27,6 @@
 }
 
 /* Modal Content */
-
 .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -70,9 +70,10 @@
 .close {
     color: #ffffff;
     float: right;
-    font-size: 28px;
+    font-size: 33px;
     font-weight: bold;
     opacity: unset;
+    padding: 6px 0px 0px 0px;
 }
 
 .close:hover, .close:focus {
@@ -88,7 +89,7 @@
 }
 
 .modal-header-content {
-    padding-top: 14px;
+    /* padding-top: 14px; */
 }
 
 .modal-body {
@@ -99,14 +100,37 @@
     text-align: justify;
 }
 
+.modal-body p, .modal-body ol li, .modal-body ul li{
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    color: #707070;
+}
+
 .modal-footer {
     padding: 2px 16px;
     background-color: #cc4645;
     color: #ffffff;
 }
 
+#goToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f1cb80;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
 @media screen and (max-width: 768px) {
-    /* .modal-body p {
-        font-size: 14px;
-    } */
+    .modal-body p, .modal-body ol li, .modal-body ul li{
+        font-size: 16px;
+        letter-spacing: 0.3px;
+    }
 }
