@@ -1,10 +1,11 @@
-/*tonyleivah*/
-$("#name").on("input", () => validateName())
+/* tonyleivah */
+//$("#name").on("input", () => validateName())
 $("#email").on("input", () => validateEmail())
 $("#send").click((event) => sendClick(event))
 
 function validateInput() {
-	if(isValidName() && isValidEmail()) {
+	//if(isValidName() && isValidEmail()) {
+	if (isValidEmail()) {
 		$("#send").removeClass("disabled")
 	} else {
 		$("#send").addClass("disabled")
@@ -40,14 +41,15 @@ function isValidName() {
 }
 function sendClick(event) {
 	event.preventDefault()
-	addMyEmail()
+	if (isValidEmail())
+		addMyEmail()
 }
 function addMyEmail() {
 	$.ajax({
 		url : "/programa/addMyEmail/",
 		type : "post",
 		data : {
-			name: $("#name").val(),
+			name: $("#name").val() == "" ? "-" : $("#name").val(),
 			email: $('#email').val()
 		},
 		success: () => { successAddMyEmail() },
@@ -56,7 +58,9 @@ function addMyEmail() {
 }
 
 function successAddMyEmail() {
-    var button = document.getElementById('send')
-    button.value = "ENVIADO"
-	$("#send").addClass("disabled")
+	$("#name").val("")
+	$("#email").val("")
+    // var button = document.getElementById('send')
+    // button.value = "ENVIADO"
+	// $("#send").addClass("disabled")
 }
