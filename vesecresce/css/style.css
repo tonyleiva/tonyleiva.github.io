@@ -894,6 +894,8 @@ footer .copyright-text {
 .countdown .sub{
   font-size: 20px;
   font-weight: 400;
+  margin: 10px 5px 20px 5px;
+  width: 140px;
 }
 
 #home:before {
@@ -1005,6 +1007,8 @@ footer {text-align: center;}
 
   .countdown .sub {
     font-size: 17px;
+    width: 80px;
+    margin: 10px 3px 20px 3px;
   }
   
   #home h1 {
