@@ -92,6 +92,7 @@
     padding: 2px 16px;
     background-image: linear-gradient(to bottom right, #c220ea, #1e87bb);
     /* background-color: #cc4645; */
+    border: none;
     color: #ffffff;
 }
 
@@ -129,12 +130,13 @@
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 5px;
     z-index: 99;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #f1cb80;
+    background-image: linear-gradient(to bottom right, #c220eacc, #1e87cc);
+    /* background-color: #f1cb80; */
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -146,4 +148,6 @@
         font-size: 16px;
         letter-spacing: 0.3px;
     }
+    .modal-content {width: 95%;}
+    .modal-body ol, .modal-body ul {padding-left: 25px;}
 }

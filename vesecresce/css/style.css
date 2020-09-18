@@ -350,13 +350,6 @@ a {
   transform: scale(0.9);
 }
 
-@media(hover: hover) and (pointer: fine) {
-  #trainer .trainer-thumb:hover .trainer-overlay {
-    opacity: 0.9;
-    transform: scale(0.9);
-  }
-}
-
 #trainer .trainer-thumb .trainer-overlay h2 {
   padding-bottom: 0px;
 }
@@ -1080,6 +1073,10 @@ footer {text-align: center;}
     left: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  footer .copyright-text {
+    padding-top: 20px;
+    font-size: 14px;
   }
 
 }
