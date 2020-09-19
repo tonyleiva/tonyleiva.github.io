@@ -1,0 +1,113 @@
+.modal {
+    display: none;
+    /* Showing by default /none */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10001;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal h3 {
+    color: #ffffff;
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    /*  border: 1px solid #888; */
+    width: 80%;
+    /*  max-width: 700px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: unset;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #cc4645;
+    color: #ffffff;
+}
+
+.modal-header-content {
+    padding-top: 14px;
+}
+
+.modal-body {
+    padding: 15px 16px 2px 16px;
+}
+
+.modal-body {
+    text-align: justify;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #cc4645;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-body p {
+        font-size: 14px;
+    }
+}

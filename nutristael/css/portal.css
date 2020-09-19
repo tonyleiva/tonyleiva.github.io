@@ -1,0 +1,58 @@
+div#portalContainer {
+    /*border-top: 6px solid #CCC;*/
+    margin-top: -60px;
+}
+#portalContainer .container .row .col-md-2 {
+    border-right: 1px solid #CCC;
+}
+ul.portalMenu {
+    list-style: none;
+    padding: 5px 0px 5px 0px;
+    margin: 15px 0px 15px 0px;
+}
+ul.portalMenu li ul {
+    list-style: none;
+    padding: 0px 0px 0px 20px;
+}
+ 
+ul.portalMenu a {
+    font-size: 19px;
+    color: rgb(50,27,27);
+    font-family: "Open Sans", Arial, serif;
+}
+ul.portalMenu li ul a {
+    font-size: 17px;
+}
+.portalMenu i {
+    margin-right: 5px;
+}
+.content {
+	padding: 140px 0px;
+}
+.form {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 450px;
+    /*border: 1px solid #ccc;*/
+}
+input#username {
+	margin-bottom: 10px;
+}
+input#username, input#password {
+    height: 50px;
+    width: 100%;
+    padding: 0px 5px 0px 35px;
+}
+label.username, label.password {
+	position: absolute;
+    padding: 9px 8px 0px 8px;
+    margin: 0px;
+    color: #AAA;
+}
+.buttons {
+	margin-top: 12px;
+}
+
+/* LOGIN */
+span.recover {margin-left: 10px;}
+.recover {display:none;}

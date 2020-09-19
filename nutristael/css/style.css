@@ -1,0 +1,1103 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Open Sans", Arial, serif;
+  line-height: 1.8;
+  font-size: 20px;
+  background: #ffffff;
+  font-weight: 300;
+}
+a {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover {text-decoration: underline !important;}
+a:focus, a:active {outline: none;}
+p {
+  margin-bottom: 1.5em;
+  font-size: 20px;
+  color: rgb(50,27,27);
+  font-weight: 300;
+  font-family: "Open Sans", Arial, serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Open Sans", Arial, serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+::-webkit-selection {
+  color: #fcfcfc;
+  background: #bdaeca;
+}
+::-moz-selection {
+  color: #fcfcfc;
+  background: #bdaeca;
+}
+::selection {
+  color: #fcfcfc;
+  background: #bdaeca;
+}
+.box-wrap {
+  background: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.box-wrap:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+#nutriStael-header {padding-top: 40px;padding-bottom: 25px;margin-bottom: 0px;}
+#nutriStael-header .navbar-default {border: transparent;background: #fff;padding-bottom: 0;margin-bottom: 0;}
+#nutriStael-header .navbar {padding: 0;margin: 0;}
+#nutriStael-header .nutriStael-navbar-brand {width: 70%;margin: 0;}
+#nutriStael-header .nutriStael-navbar-brand .nutriStael-logo {
+  width: 52px;
+  height: 30px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-table;
+}
+#nutriStael-header .nutriStael-navbar-brand .nutriStael-logo:focus, #nutriStael-header .nutriStael-navbar-brand .nutriStael-logo:hover {
+  text-decoration: none !important;
+}
+#nutriStael-header .nav {width: 100%;}
+#nutriStael-header .nav li {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 35px;
+  text-transform: uppercase;
+}
+#nutriStael-header .nav li:first-child {margin-left: 0;}
+#nutriStael-header .nav li a {
+  font-family: "Open Sans", Arial, serif;
+  color: #000;
+  position: relative;
+  font-weight: 400;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding: 0;
+}
+#nutriStael-header .nav li a:hover, #nutriStael-header .nav li a:focus {
+  color: #000;
+  background: transparent;
+  text-decoration: none !important;
+}
+#nutriStael-header .nav li.active a {
+  color: #f3752e;
+  background: transparent;
+  position: relative;
+}
+#nutriStael-header .nav li.active a:before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  top: -20px;
+  background: rgb(243,117,46);
+  content: '';
+  left: 50%;
+  margin-left: -4px;
+}
+.owl-carousel {margin-bottom: 5em;}
+
+/* Owl Override Style */
+.owl-carousel .owl-controls,
+.owl-carousel-posts .owl-controls {margin-top: 0;}
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel-posts .owl-controls .owl-nav .owl-next,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev {top: 50%;margin-top: -29px;z-index: 9999;position: absolute;-webkit-transition: 0.2s;-o-transition: 0.2s;transition: 0.2s;}
+.owl-carousel-posts .owl-controls .owl-nav .owl-next,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev {top: 24%;}
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel-posts .owl-controls .owl-nav .owl-next {right: 40px;}
+.owl-carousel .owl-controls .owl-nav .owl-next:hover,
+.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover {margin-right: -10px;}
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev {left: 40px;}
+.owl-carousel .owl-controls .owl-nav .owl-prev:hover,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover {margin-left: -10px;}
+.owl-carousel-posts .owl-controls .owl-nav .owl-next {right: -50px;}
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev {left: -50px;}
+.owl-carousel-posts .owl-controls .owl-nav .owl-next i,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-next i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev i {color: #000;}
+.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev:hover i {color: #000;}
+.owl-carousel-fullwidth.nutriStael-light-arrow .owl-controls .owl-nav .owl-next i,
+.owl-carousel-fullwidth.nutriStael-light-arrow .owl-controls .owl-nav .owl-prev i {font-size: 50px;color: #fff;}
+.owl-carousel-fullwidth.nutriStael-light-arrow .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel-fullwidth.nutriStael-light-arrow .owl-controls .owl-nav .owl-prev:hover i {color: #fff;}
+.owl-carousel2 .owl-controls .owl-nav .owl-next i,
+.owl-carousel2 .owl-controls .owl-nav .owl-prev i {font-size: 50px;color: rgba(0, 0, 0, 0.5);}
+.owl-carousel2 .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel2 .owl-controls .owl-nav .owl-prev:hover i {color: rgba(0, 0, 0, 0.6);}
+.owl-carousel2 .owl-controls .owl-nav .owl-next {right: -50px;}
+.owl-carousel2 .owl-controls .owl-nav .owl-next:hover {margin-right: -10px;}
+.owl-carousel2 .owl-controls .owl-nav .owl-prev {left: -50px;}
+.owl-carousel2 .owl-controls .owl-nav .owl-prev:hover {margin-left: -10px;}
+.owl-carousel2 .owl-dots {display: none !important;}
+.owl-theme .owl-controls .owl-nav [class*="owl-"] {background: none !important;}
+.owl-theme .owl-controls .owl-nav [class*="owl-"] i {font-size: 30px;}
+.owl-theme .owl-controls .owl-nav [class*="owl-"] i:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"] i:focus {background: none !important;}
+.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus {background: none !important;}
+.owl-theme .owl-dots {position: absolute;bottom: 0;width: 100%;text-align: center;}
+.owl-carousel-fullwidth.owl-theme .owl-dots {bottom: 0;margin-bottom: 40px;}
+.owl-theme .owl-dots .owl-dot span {width: 10px;height: 10px;background: rgba(255, 255, 255, 0.3);-webkit-transition: 0.2s;-o-transition: 0.2s;transition: 0.2s;border: 2px solid transparent;}
+.owl-theme .owl-dots .owl-dot span:hover {background: none;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {background: #fff;}
+#nutriStael-media-section, #nutriStael-intro-section, #nutriStael-contact-section,
+#nutriStael-product-section, #nutriStael-blog, .about-section {padding-bottom: 0em;}
+#nutriStael-intro-section h2 {font-size: 40px;/* text-transform: uppercase; */color: #fff;letter-spacing: 1px;}
+#nutriStael-intro-section h3 {color: rgba(255, 255, 255, 0.8);font-weight: 300;line-height: 38px;}
+.section-overlay {margin-bottom: 3em;position: relative;padding-bottom: 0 !important;}
+.section-overlay:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+  z-index: 1;
+}
+.section-overlay .float-overlay {z-index: 9;}
+.nutriStael-cover {
+  min-height: 448px;
+  position: relative;
+  margin-bottom: 40px;
+  background-size: cover;
+  background: center center;
+}
+.nutriStael-cover .desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.nutriStael-cover .desc p {color: #fff;margin-bottom: 10px;}
+.nutriStael-cover .desc span {color: rgba(255, 255, 255, 0.7);}
+.nutriStael-cover .nutriStael-cover-hero {
+  min-height: 122px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.nutriStael-cover .nutriStael-cover-hero .nutriStael-cover-thumb {
+  width: 170px;
+  height: 123px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background: center;
+}
+.nutriStael-cover .nutriStael-cover-hero .desc-thumb {padding-left: 180px;}
+.nutriStael-cover .nutriStael-cover-hero .desc-thumb p {margin-bottom: 7px;}
+.nutriStael-cover .nutriStael-cover-hero .desc-thumb span {color: rgba(0, 0, 0, 0.4);}
+.nutriStael-intro-cover {
+  width: 100%;
+  padding: 35px 0;
+  position: relative;
+}
+.nutriStael-intro-cover:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  background: #544d5936;
+}
+.nutriStael-intro-cover a.btn {
+  position: relative;
+  border: 4px solid #fff;
+  padding: 30px 50px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+.nutriStael-intro-cover a.btn:hover, .nutriStael-intro-cover a.btn:focus {
+  text-decoration: none !important;
+  background: transparent !important;
+  color: #fff !important;
+}
+.nutriStael-grey-section {padding: 5em 0;}
+.nutriStael-border-line {border-top: 1px solid rgba(0, 0, 0, 0.05);}
+.nutriStael-inner {
+  margin-bottom: 3em;
+  position: relative;
+}
+.nutriStael-inner i {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  font-size: 60px;
+}
+.nutriStael-inner .holder-section {padding-left: 6em;}
+.nutriStael-inner .holder-section h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #a980cd;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.nutriStael-services {margin-bottom: 2em;text-align: center;height: 260px;}
+.about-section img.display-left {float: left;padding-right: 40px;}
+.about-section img.display-right {
+  float: right;
+  padding-left: 40px;
+}
+#nutriStael-product-section .product-inner {
+  margin-bottom: 5em;
+  float: left;
+  width: 100%;
+}
+#nutriStael-product-section .product-inner:last-child {
+  /*margin-bottom: 0;*/
+}
+#nutriStael-product-section .product-inner h3 {font-size: 30px;letter-spacing: 1px;}
+#nutriStael-product-section .product-inner h3 a {color: rgba(0, 0, 0, 0.8);}
+#nutriStael-product-section .product-inner img {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+}
+#nutriStael-product-section .product-inner .desc {
+  margin-top: 0em;
+}
+.sidebar {padding: 0 0 0 10px;}
+.sidebar a:hover {
+  text-decoration: none !important;
+}
+.sidebar img {
+  margin-bottom: 20px;
+}
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.sidebar .inner {
+  margin-bottom: 4em;
+}
+.sidebar .inner .list li {
+  color: rgba(0, 0, 0, 0.4);
+}
+.sidebar .inner .list li a {
+  color: rgba(0, 0, 0, 0.4);
+}
+#map {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.contact-info {
+  margin: 0;
+  padding: 0;
+}
+.contact-info li {
+  list-style: none;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding-left: 40px;
+}
+.contact-info li i {
+  position: absolute;
+  top: .3em;
+  left: 0;
+  font-size: 22px;
+  color: #000;
+}
+.contact-info li a {
+  font-weight: 400 !important;
+  color: #a980cd;
+}
+.form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+.form-control:focus, .form-control:active {
+border: 1px solid rgba(0, 0, 0, 0.5);
+box-shadow: none;
+}
+input[type="text"] {
+height: 50px;
+}
+.form-group {
+margin-bottom: 30px;
+}
+.form-group label {
+font-weight: normal;
+font-weight: 18px;
+}
+#footer {
+padding: 60px 0 40px;
+}
+#footer p {
+font-size: 14px;
+margin-bottom: 10px !important;
+line-height: 1.5 !important;
+}
+#footer p i.love {
+color: red;
+}
+.nutriStael-social-icons a {
+padding: 4px 8px;
+color: rgba(0, 0, 0, 0.7);
+}
+.nutriStael-social-icons a i {
+font-size: 34px;
+}
+.nutriStael-social-icons a:hover, .nutriStael-social-icons a:focus, .nutriStael-social-icons a:active {
+  text-decoration: none;
+  color: #000;
+  text-decoration: none !important;
+}
+.heading-section {
+  margin-bottom: 5em;
+}
+.heading-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  color: rgb(243,117,46);
+}
+.heading-section h3 a {color: rgb(243,117,46);}
+.btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn.btn-primary {
+  background: #f7c179;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+  box-shadow: none;
+  background: #f7c179;
+  text-decoration: underline;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: #f7c179 !important;
+  color: #fff;
+  outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  border-color: transparent;
+}
+.social {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+.social li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.social li a {
+  font-size: 24px;
+  display: table;
+  width: 24px;
+  height: 24px;
+  margin: 0 4px;
+  color: #000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.social li a:hover, .social li a:focus {
+  color: #a980cd;
+  text-decoration: none;
+}
+.social li a i {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.js .animate-box {
+  opacity: 0;
+}
+
+/******/
+#shopStael-hero {
+	min-height: 700px;
+	background: #fff url(../images/loader.gif) no-repeat center center;
+}
+#shopStael-hero .btn {
+	font-size: 24px;
+}
+#shopStael-hero .btn.btn-primary {
+	padding: 14px 30px !important;
+}
+#shopStael-hero .flexslider {
+	border: none;
+	z-index: 1;
+	margin-bottom: 0;
+}
+#shopStael-hero .flexslider .slides {
+	position: relative;
+	overflow: hidden;
+}
+#shopStael-hero .flexslider .slides li {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 700px;
+}
+#shopStael-hero .flexslider .flex-control-nav {
+	bottom: 40px;
+	z-index: 1000;
+}
+#shopStael-hero .flexslider .flex-control-nav li a {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: none;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+}
+#shopStael-hero .flexslider .flex-control-nav li a.flex-active {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.7);
+}
+#shopStael-hero .flexslider .flex-direction-nav {
+	display: none;
+}
+#shopStael-hero .flexslider .slider-text {
+	display: table;
+	opacity: 0;
+	min-height: 700px;
+}
+#shopStael-hero .flexslider .slider-text > .slider-text-inner {
+	display: table-cell;
+	vertical-align: middle;
+	min-height: 700px;
+}
+#shopStael-hero .flexslider .slider-text > .slider-text-inner h2 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+#shopStael-hero .flexslider .slider-text > .slider-text-inner .desc {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 40px;
+}
+#shopStael-hero .flexslider .slider-text > .slider-text-inner .desc .price {
+	font-size: 14px;
+	letter-spacing: 3px;
+	display: block;
+	margin-bottom: 20px;
+}
+#shopStael-hero .flexslider .slider-text > .slider-text-inner .btn {
+	font-size: 18px;
+}
+#shopStael-hero .flexslider .slider-text > .slider-text-inner .shopStael-lead {
+	font-size: 20px;
+	color: #fff;
+}
+#shopStael-hero .flexslider .slider-text > .slider-text-inner .shopStael-lead .icon-heart {
+	color: #d9534f;
+}
+@-moz-document url-prefix() {
+  #shopStael-hero .flexslider .slider-text > .slider-text-inner {padding-top: 170px;}
+}
+/***/
+#nutriStael-media-section {padding-top: 70px;}
+#nutriStael-blog, #nutriStael-nutri-section {padding-top: 70px;clear: both;}
+#nutriStael-blog .nutriStael-post {
+	background: #fff;
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 25px;
+	-webkit-box-shadow: -2px 11px 24px -8px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: -2px 11px 24px -8px rgba(0, 0, 0, 0.15);
+	box-shadow: -2px 11px 24px -8px rgba(0, 0, 0, 0.15);
+	position: relative;
+	bottom: 0;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+  min-height: 250px;
+}
+#nutriStael-blog .nutriStael-post h3 {
+  margin: 5px 0px 15px 0px;
+}
+#nutriStael-blog .nutriStael-post h3 a {color: rgb(50,27,27);}
+#nutriStael-blog .nutriStael-post h3 a:hover {
+	/*color: #f35f55;*/
+}
+#nutriStael-blog .nutriStael-post .nutriStael-date {
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #cccccc;
+	letter-spacing: .07em;
+}
+#nutriStael-blog .nutriStael-post p.author {
+	color: #b3b3b3;
+}
+#nutriStael-blog .nutriStael-post p.author img {
+	width: 50px;
+	margin-right: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+}
+#nutriStael-blog .nutriStael-post p.author cite {
+	font-style: normal;
+	font-size: 13px;
+}
+#nutriStael-blog .nutriStael-post p:last-child {
+	margin-bottom: 0;
+}
+#nutriStael-blog .nutriStael-post:hover, #nutriStael-blog .nutriStael-post:focus {
+	bottom: 10px;
+}
+/***/
+#nutriStael-product-section .testimonial {
+  padding: 30px;
+  position: relative;
+  margin-bottom: 4em;
+  background: #ffffff;
+  -webkit-box-shadow: -2px 11px 24px -8px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -2px 11px 24px -8px rgba(0, 0, 0, 0.15);
+  box-shadow: -2px 11px 24px -8px rgba(0, 0, 0, 0.15);
+}
+#nutriStael-product-section .heading-section {
+    margin-bottom: 2em;
+}
+#nutriStael-product-section .testimonial blockquote {
+  border-left: none;
+  padding: 0;
+  margin: 0;
+}
+#nutriStael-product-section .testimonial p {
+  color: #000;
+}
+#nutriStael-product-section .testimonial p.author {
+  color: #b3b3b3;
+}
+#nutriStael-product-section .testimonial p.author img {
+  width: 60px;
+	height: 60px;
+  margin-right: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#nutriStael-product-section .testimonial p.author cite {
+  font-style: normal;
+  font-size: 13px;
+}
+#nutriStael-product-section .testimonial p:last-child {
+  margin-bottom: 0;
+}
+
+/***/
+#nutriStael-section .holder-section {
+    padding: 2em;
+}
+#nutriStael-section .holder-section .icon-shield,
+#nutriStael-section .holder-section .icon-strategy,
+#nutriStael-section .holder-section .icon-bike {
+    position: relative;
+}
+/*# sourceMappingURL=style.css.map */
+
+
+ul.dropdown {
+    /* display: none; */
+    position: absolute;
+    z-index: 4;
+    left: -21px;
+    webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+    padding: 0;
+}
+ 
+ul.dropdown li {
+    width: 150px;
+    z-index: 3;
+    text-align: left;
+    background: #FFF;
+    padding: 10px;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    margin-left: 0px !important;
+}
+ 
+ul.dropdown li a {
+	width: 100%;
+    display: block;
+}
+
+/* MAIN */
+footer{border-top: 6px solid #CCC;background: #363839;}
+footer i, footer p {color: #DDDDDD;}
+h3.up {text-transform: uppercase;}
+figure {
+border-radius: 7px;
+overflow: hidden;
+max-height: 369px;
+}
+#submitContact[disabled] {cursor: default;text-decoration: none;}
+.nutriStael-intro-cover a.btn {background: rgba(0, 0, 0, 0.3);}
+.nutriStael-intro-cover a.btn:hover {background: rgba(0, 0, 0, 0.6) !important;}
+.nutriStael-intro-cover.index {padding: 60px 0;}
+.nutriStael-intro-cover.text-center {background-size: cover;}
+.pagesSubMenu {text-align: center;margin: 1em 0 3em 0;border-bottom: 1px solid #CCC;padding-bottom: 1em;}
+span.postTopic {font-family: "Open Sans", Arial, serif;margin-right: 7px;float:left;}
+span.postTopic a {color:#36bc9a;}
+span.postTopic.points {color: #36bc9a;font-weight: bold;}
+.recipeList {color: rgb(50,27,27);}
+.recipeList:hover {color: rgb(50,27,27);}
+.moreRecipes, .moreBlog {margin-top: 25px;}
+.nutriStael-cover .desc p a {color: #fff;margin-bottom: 10px;}
+div.partner-ref, a.partner-ref, a.partner-ref:hover {color: #a980cd;}
+.partner-item {padding: 0px 20px 20px 20px;}
+.partner-item img {width: 100%;border: 1px solid #666;}
+.hidden{display: none;}
+span.link{color: #36bc9a !important;text-decoration: none;}
+a.link {color: #36bc9a !important;text-decoration: none;}
+a.link:hover, a.link:focus {color: #2d987d !important;text-decoration: underline !important;}
+.justify{text-align:justify;}
+.background {background: #ffc8c83d;}
+/* Menu */
+#nutriStael-header .nav li a.portalMenu {background: #f7c179;padding: 5px 25px !important;border-radius: 5px;color: #FFF !important;letter-spacing: 1px;}
+#nutriStael-header .nav li a.portalMenu:hover {background: #f7c179 !important;padding: 5px 25px !important;border-radius: 5px;color: #FFF !important;text-decoration: underline !important;}
+a.nutriStael-logo img {position: absolute;z-index: 3;top: -30px;height: 110px;}
+.main-nav ul.nav.text-right {padding-top: 35px;}
+a.linkAsMenu {
+	background: #fcc034 !important;
+    padding: 5px 25px !important;
+    border-radius: 5px;
+    color: #FFF !important;
+    display: block;
+    text-align: center !important;
+    margin: 1px 0px;
+    width: 100%;
+    border: 2px solid #fcc034;
+    margin-bottom: 10px;
+}
+a.linkAsMenu:hover, a.linkAsMenu:focus {
+	background: #FFF !important;
+	color: #f7c179 !important;
+	border-color: #f7c179;
+	text-decoration: none !important;
+}
+a.linkAsMenu i {
+    margin: 0px 11px 0px 0px;
+}
+/* Pages */
+.page-header-cover {
+  width: 100%;
+  padding: 35px 0;
+  position: relative;
+  background-size: cover;
+  background-position-y: 0px;
+}
+.page-header-title {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 60px 0px;
+  /* height: 210px; */
+  vertical-align: middle;
+  display: table-cell;
+}
+.page-submenu, .page-submenu a {color: #36bc9a;}
+.center{text-align: center;}
+.page-submenu {
+  /* text-align: center; */
+  padding: 0 0 15px 0;
+}
+.page-body {background: #ffc8c83d;padding: 50px 0 100px 0;}
+/* Page elements */
+.link-button {
+  box-shadow: none;
+  background: #f7c179;
+  color: #ffffff;
+  margin: 0 0 30px 0;
+}
+.img-cicle {
+  border-radius: 50%;
+  padding: 10px;
+  /* padding: 27px; celular */
+  width: 100%;
+}
+/* Partner */
+.partner h4 {margin: 0 0 10px 0;}
+.partner a h4 {color:#36bc9a;}
+.partner a:hover h4, .partner a:focus h4 {color:#2d987d;}
+/* ABOUT */
+.about img {max-width: 100%;}
+.about .sidebar .inner .list li {color: rgba(0, 0, 0, 0.65);}
+.aboutImage {max-width: 400px !important;}
+/* Recipes */
+.recipesList.product-inner {margin-bottom: 0em !important;}
+#loadMore div {margin: 0;}
+#loadMore a {font-weight: 400;}
+#loadMore {display:none;}
+.listItem {margin-bottom: 5em;}
+.topics .nutriStael-post > h4 > a {text-transform: uppercase;}
+.textUpper {text-transform: uppercase;}
+.recipeImage {text-align:center;margin-bottom:30px;}
+.recipeImage img {max-width:100%;}
+ul.list.categories {
+    padding-left: 5px;
+    margin-top: -15px;
+}
+ul.list.categories li {
+    list-style: none;
+    /* text-transform: uppercase; */
+}
+ul.list.categories li a {
+	/*color: rgba(0, 0, 0, 0.7) !important;*/
+	font-size: 17px;
+}
+/* Blog */
+.postDate {float: left;font-family: "Open Sans", Arial, serif;}
+.postSepareteDateTopic {display: list-item;position: initial;float: left;margin: 0px 0px 0px 25px;}
+.postDateTopics {
+	/*top: 1px;*/
+    /* text-transform: uppercase; */
+    font-size: 12px;
+    color: #aaaaaa;
+    /*letter-spacing: 0.05em;*/
+    padding-left: 3px;
+    /* display: table; */
+    /* display: none; */
+    max-height: 21px;
+    overflow: hidden;
+}
+.categoryListItem,
+.topicListItem {margin: 0px 0px 4px 0px;}
+.categoryListItem:last-child,
+.topicListItem:last-child {padding-bottom: 5em;}
+.postImage {text-align:center;margin-bottom: 30px;}
+.postImage img {max-width: 100%;}
+ul.list.topics {
+    padding-left: 5px;
+    margin-top: -15px;
+}
+ul.list.topics li {list-style: none;}
+ul.list.topics li a {font-size: 17px;}
+#blogPost .page-header-cover {background-position-y: -20px;}
+/* TOPICS */
+.topics div.nutriStael-post {background: rgba(0,0,0,0.1);padding: 30px 10px !important;text-align: center;}
+.topics div.nutriStael-post p {font-size: 17px;margin-top: 30px;}
+.topics div.nutriStael-post h4 {margin: auto;}
+.topics div.container div.row div {
+  /*margin: 0px 0px 4px 0px;*/
+}
+/* Services */
+.services.page {padding-bottom: 2em;}
+.services.page i {position: relative;margin: auto;}
+.services-item {padding: 15px 0px;}
+.services-item h3, .services-item a, .services-item a:hover {color: rgb(243,117,46);}
+.services-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    /*background: rgba(0, 0, 0, 0.6); */
+    border-radius: 10px;
+}
+.services-item {border-radius: 10px;background-size: cover;}
+.service-style {position: relative;}
+.services-item h3 {/*margin-top: 10px;*/}
+/*.services-item p {color: #FFF;}*/
+.serviceImage {margin-bottom: 30px;}
+.serviceImage img {width: 100%;}
+/* funcionamento */
+p.noBottomMargin {margin-bottom: 0px;}
+/* FOOTER & SOCIAL */
+.fb-like{
+  display: grid !important;
+  /* float:left;margin-top:-20px; */
+}
+.fb-page{margin-bottom: 10px;}
+p.nutriStael-social-icons {margin-top: 5px;}
+/* PORTAL */
+#errolog {display: none;font-weight: normal;color: rgba(255, 34, 34, 0.8);}
+
+/*----- Toggle Button -----*/
+.toggle-nav {
+	display:none;
+}
+
+/*----- Menu -----*/
+.menu ul {
+	display:inline-block;
+}
+
+.menu li {
+	/* margin:0px 50px 0px 0px; */
+	/* float:left; */
+	/* list-style:none; */
+	font-size:17px;
+}
+
+.menu li:last-child {
+	margin-right:0px;
+}
+
+.menu a {
+/* 	text-shadow:0px 1px 0px rgba(0,0,0,0.5); */
+/* 	color:#777; */
+	transition:color linear 0.15s;
+}
+
+.menu a:hover, .menu .active a {
+	text-decoration:none;
+	color:#66a992;
+}
+.menu ul.nav {
+    margin: 0px;
+}
+
+/*----- Responsive -----*/
+@media screen and (max-width: 1150px) {
+	.wrap {
+		width:90%;
+	}
+}
+@media screen and (max-width: 992px) {
+  #nutriStael-header .nutriStael-navbar-brand {text-align: center;/* margin-bottom: 0px; */float: left;/*padding-left: 50px;*/width: 100%;position: inherit;padding-bottom: 5px;}
+  #nutriStael-header .nav {text-align: center;margin-bottom: 0px;padding-bottom: 0px;padding-top: 5px;}
+  #nutriStael-header .nav li.active a {color: rgb(243,117,46);}
+  a.nutriStael-logo img {position: relative !important;top: -27px !important;height: 129px !important;}
+  .owl-carousel2 .owl-dots {display: block !important;}
+  .social {text-align: center;}
+  #nutriStael-product-section .product-inner .desc {margin-top: 0;}
+  .nutriStael-cover .nutriStael-cover-hero {
+    height: 448px;
+  }
+  .nutriStael-cover .nutriStael-cover-hero .nutriStael-cover-thumb {
+    height: 448px;
+    width: 100%;
+  }
+  .nutriStael-cover .nutriStael-cover-hero .desc-thumb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    /* padding: 40px; */
+    background: rgba(0, 0, 0, 0.7);
+    /* background: rgba(0, 0, 0, 0.2); */
+  }
+  .nutriStael-cover .nutriStael-cover-hero .desc-thumb p {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .nutriStael-cover .nutriStael-cover-hero .desc-thumb span {
+    /*font-size: 16px;*/
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .recipeList, .recipeList:hover {color: #FFF !important;}
+  /* Pages */
+  .page-header-title {
+    font-size: 23px;
+    padding: 25px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .serviceBody li, #recipePost li, .blogPostClass li,
+	p, .page-body .list, .text {font-size: 18px;}
+	.content.list {font-size: 18px;}
+	.main-nav ul.nav.text-right {padding-top: 1px !important;}
+  #nutriStael-header .nav li {width: 100%;margin-left: 0;  }
+  #nutriStael-header .nav li a {padding: 10px 0;  }
+  .owl-carousel-posts .owl-controls .owl-nav .owl-next {right: 0px;}
+  .owl-carousel-posts .owl-controls .owl-nav .owl-prev {left: 0px;}
+  .owl-theme .owl-controls .owl-nav {display: none;}
+  #nutriStael-media-section, #nutriStael-intro-section, #nutriStael-contact-section,
+  #nutriStael-product-section, .about-section {padding-bottom: 3em;}
+  .nutriStael-intro-cover a.btn {padding: 15px 25px;font-size: 16px;}
+  .about-section img.display-right {float: left;padding-right: 40px;padding-left: 0;}
+  #map {height: 200px;}
+  .contact-info {margin-bottom: 4em;}
+	#shopStael-hero .flexslider .slider-text > .slider-text-inner h2 {font-size: 25px;}
+	#nutriStael-blog {padding: 3em 0;}
+	#nutriStael-blog .nutriStael-post:hover, #nutriStael-blog .nutriStael-post:focus {bottom: 0;}
+  ul.dropdown {
+      /* display: none; */
+      z-index: 4;
+      webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+      padding: 0;
+      width: 250px;
+      margin: auto;
+  }
+  #nutriStael-header .nav li.active a:before {top: 0;}
+	#nutriStael-header .nav li.active a {
+		border-bottom: 2px solid transparent;
+	 }
+	 a.nutriStael-logo img {
+	 	height: 85px !important;
+	 	top: 0px !important;
+	 	/* padding-left: 61px; */
+	 }
+	 #nutriStael-header .nutriStael-navbar-brand {
+	 	/* padding-left: 92px; */
+	 	/* padding-bottom: 6px; */
+	 }
+	 #nutriStael-header .nav li.active a:before {
+		content: none;
+/*		li.active a: before;*/
+	}
+	div.menu .nav li:hover, div.menu .nav li:focus {
+	    font-weight: bold;
+/*     	background: #f3752e1c; */
+	}
+	header#nutriStael-header {
+	    padding-top: 5px;
+	    padding-bottom: 10px;
+	}
+	.menu {
+		position:relative;
+		display:inline-block;
+		/* padding-top: 3px; */
+		/* float: right; */
+		width: 100%;
+	}
+	
+	.menu ul.menu-active {
+		display:none;
+	}
+	
+	.menu ul {
+		/* width:100%; */
+	/* 		position:absolute; */
+	/* top:120%; */
+	/* left:0px; */
+	/* padding:10px 18px; */
+	/* box-shadow:0px 1px 1px rgba(0,0,0,0.15); */
+	/* border-radius:3px; */
+	/* background:#303030; */
+	/* background: #3030301f; */
+		border: 1px solid #3030301f;
+		border-radius: 4px;
+		padding: 0px 0px 0px 0px;
+	}
+	
+	.menu ul:after {
+		/* width:0px; */
+	/* height:0px; */
+	/* position:absolute; */
+	/* top:0%; */
+	/* right: 22px; */
+	/* content:''; */
+	/* transform: translate(0%, -100%); */
+	/* border-left:7px solid transparent; */
+	/* border-right:7px solid transparent; */
+	/* border-top: 7px solid #3030301f; */
+	}
+	
+	.menu li {
+		padding: 5px 0px 5px 0px;
+		float:none;
+		/* border: 1px solid #cacaca; */
+		border-radius: 6px;
+	}
+	
+	.menu a {
+		display:block;
+	}
+	
+	.toggle-nav {
+		padding: 19px;
+		right: 15px;
+		top: 15px;
+		float: right;
+		display: inline-block;
+		/* box-shadow:0px 1px 1px rgba(0,0,0,0.15); */
+		border-radius:3px;
+		/* background: #3030301f; */
+		text-shadow: 0px 1px 0px #f3752e;
+		color: #f3752e;
+		font-size:20px;
+		transition:color linear 0.15s;
+		/* margin-top: 15px; */
+		border: 1px solid #3030301f;
+		position: absolute;
+	}
+
+	.toggle-nav:hover, .toggle-nav:focus, .toggle-nav.menu-active {
+		text-decoration: none !important;
+		color: #f3752e;
+  }
+  /* Pages */
+  .page-header-title {
+    font-size: 20px;
+    padding: 4px 0px;
+  }
+}

@@ -1,0 +1,11 @@
+p{margin-bottom: 10px !important;line-height: 1.5 !important;}
+h2,h3{margin-bottom: 10px !important;}
+.moreRecipes a, .moreBlog a {color:#36bc9a;font-size: 15px !important;font-weight: 400 !important;vertical-align: top !important;}
+.moreRecipes a, .moreBlog a:hover {color:#2d987d;}
+.moreRecipes, .moreBlog {margin-top: 0px !important;}
+div.heading-section {margin-bottom: 2em;}
+div#nutriStael-nutri-section {padding-bottom: 2em;}
+.holder-section {padding: 0 2em 0 2em !important;}
+.nutriStael-inner.nutriStael-services {margin-bottom: 1em;display: inline;}
+div#nutriStael-product-section {padding-bottom: 3em;}
+.postDateTopics {display: table;}
