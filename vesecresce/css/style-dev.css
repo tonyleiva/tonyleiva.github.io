@@ -217,7 +217,7 @@ a {
     /* background-image: url(../images/BoraGuria_LauBaldo-8616_02.jpg); */
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center 1100px;
     /* background-position: center center; */
     color: #ffffff;
     display: -webkit-box;
