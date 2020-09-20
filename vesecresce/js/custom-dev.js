@@ -1,9 +1,4 @@
-/* jQuery Pre loader
- -----------------------------------------------*/
-// $(window).load(function () {
-//   $('.preloader').fadeOut(10); // set duration in brackets    
-// });
-
+/*
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
 $(document).ready(function () {
@@ -134,4 +129,3 @@ $(document).ready(function () {
     }
   }, 1000);
 });
-
