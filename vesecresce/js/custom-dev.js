@@ -1,8 +1,8 @@
 /* jQuery Pre loader
  -----------------------------------------------*/
-// $(window).load(function () {
-//   $('.preloader').fadeOut(10); // set duration in brackets    
-// });
+$(window).load(function () {
+  $('.preloader').fadeOut(10); // set duration in brackets    
+});
 
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
@@ -73,7 +73,7 @@ $(document).ready(function () {
     $(function () {
       jQuery(document).ready(function () {
         $('#home').backstretch([
-          "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8603_02.jpg",
+          "https://github.com/tonyleiva/tonyleiva.github.io/raw/master/vesecresce/images/vesecresce-mobile-cover-cs.jpeg",
           "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8572.jpg",
           "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8573_02.jpg",
           "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8586_02.jpg",
