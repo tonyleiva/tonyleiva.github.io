@@ -1031,7 +1031,7 @@ footer {text-align: center;}
 @media (max-width: 760px) {
 
   #home {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   #blog-header {

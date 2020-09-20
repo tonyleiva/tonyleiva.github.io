@@ -2,7 +2,7 @@
  /* jQuery Pre loader
   -----------------------------------------------*/
 $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').fadeOut(10); // set duration in brackets    
 });
 
 
@@ -75,14 +75,14 @@ $(document).ready(function() {
 
    /* home slider section
   -----------------------------------------------*/
-  // $(function(){
-  //   jQuery(document).ready(function() {
-  //   $('#home').backstretch([
-  //       "images/wp2020-09-15-18.44.52.jpeg",
-  //       // "https://tonyleiva.github.io/vesecresce/images/wp2020-09-15-18.44.52.jpeg",
-  //       ],  {duration: 2000, fade: 750});
-  //   });
-  // })
+  $(function(){
+    jQuery(document).ready(function() {
+    $('#home').backstretch([
+        "images/wp2020-09-15-18.44.52.jpeg",
+        // "https://tonyleiva.github.io/vesecresce/images/wp2020-09-15-18.44.52.jpeg",
+        ],  {duration: 2000, fade: 750});
+    });
+  })
 
 
   /* Owl Carousel
