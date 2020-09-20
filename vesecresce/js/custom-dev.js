@@ -61,7 +61,7 @@ $(document).ready(function() {
  /* Parallax section
     -----------------------------------------------*/
   function initParallax() {
-    // $('#home').parallax("100%", 0.1);
+    $('#home').parallax("100%", 0.1);
     $('#overview').parallax("100%", 0.3);
     $('#trainer').parallax("100%", 0.2);
     $('#newsletter').parallax("100%", 0.3);
@@ -78,8 +78,8 @@ $(document).ready(function() {
   $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
-        "images/wp2020-09-15-18.44.52.jpeg",
-        // "https://tonyleiva.github.io/vesecresce/images/wp2020-09-15-18.44.52.jpeg",
+        // "images/wp2020-09-15-18.44.52.jpeg",
+        "https://tonyleiva.github.io/vesecresce/images/wp2020-09-15-18.44.52.jpeg",
         ],  {duration: 2000, fade: 750});
     });
   })
