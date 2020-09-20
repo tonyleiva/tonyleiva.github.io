@@ -1084,7 +1084,7 @@ footer {text-align: center;}
 
 @media (max-width: 650px) {
   #home {
-    /* background-image: url(../images/wp2020-09-15-18.44.52.jpeg); */
+    background-image: url(https://tonyleiva.github.io/vesecresce/images/wp2020-09-15-18.44.52.jpeg);
     background-position: center center;
   }
   #home img {padding-top: 50px;}
