@@ -56,7 +56,6 @@ $(document).ready(function () {
     $('#blog').parallax("100%", 0.1);
     $('#price').parallax("100%", 0.2);
     $('#testimonial').parallax("100%", 0.2);
-
   }
   initParallax();
 
