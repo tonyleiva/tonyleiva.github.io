@@ -218,23 +218,47 @@ a {
 }
 
 #home .btn {
-  background: #26253a;
-  border: none;
+  background: #ffffff;
+  border: 4px solid #df275e;
   border-radius: 0px;
-  color: #999;
+  color: #df275e;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 4px;
   padding: 16px 38px;
-  margin-top: 28px;
+  margin-top: 0px;
   transition: all 0.4s ease-in-out;
 }
 
 #home .btn:hover {
-  background: #ffffff;
-  color: #26253a;
+  background: #df275e;
+  color: #ffffff;
 }
 
+#home:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  background: #0000006e;
+}
+
+#home img {
+  padding-top: 355px;
+  max-width: 280px;
+  width: 36%;
+  height: auto;
+}
+
+#home h1 {
+  font-size: 30px;
+  line-height: normal;
+  margin-top: -21px;
+  padding-top: 0px;
+}
 /*---------------------------------------
  Overview  section              
 -----------------------------------------*/
@@ -242,6 +266,7 @@ a {
   padding-top: 14rem;
   padding-bottom: 20rem;
   position: relative;
+  background-image: linear-gradient(to bottom right, #c220ea, #1e87bb);
 }
 
 #overview img {
@@ -251,8 +276,9 @@ a {
 
 #overview blockquote {
   background: #ffffff;
+  color: #df275e;
   box-shadow: 0px 2px 8px 10px rgba(50, 50, 50, 0.04);
-  border-left: 8px solid #26253a;
+  border-left: 8px solid #df275e;
   word-spacing: 1px;
   letter-spacing: 1px;
   position: absolute;
@@ -266,10 +292,18 @@ a {
   position: relative;
   top: 40px;
 }
-
+#overview .overview-detail h2 {
+  text-align: center;
+  color: #fff;
+}
+#overview .overview-detail p {
+  text-align: center;
+  color: #fff;
+}
 #overview .btn {
-  background: transparent;
-  border: 4px solid #26253a;
+  background: white;
+  border: 4px solid #df275e;
+  color: #df275e;
   border-radius: 0px;
   font-size: 22px;
   font-weight: 600;
@@ -281,7 +315,7 @@ a {
 }
 
 #overview .btn:hover {
-  background: #26253a;
+  background: #df275e;
   color: #ffffff;
 }
 
@@ -737,17 +771,6 @@ a {
   background: #222;
 }
 
-@media screen and (max-width: 60em) {
-  #price .pricing__item {
-    max-width: none;
-    width: 100%;
-    flex: none;
-  }
-  #price .pricing__item:nth-child(2) {
-    border: 1px solid #fff;
-  }
-}
-
 /*---------------------------------------
   Testimonial section              
 -----------------------------------------*/
@@ -870,31 +893,6 @@ footer .copyright-text {
   width: 140px;
 }
 
-#home:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: '';
-  width: 100%;
-  background: #0000006e;
-}
-
-#home img {
-  padding-top: 364px;
-  max-width: 280px;
-  width: 36%;
-  height: auto;
-}
-
-#home h1 {
-  font-size: 30px;
-  line-height: normal;
-  margin-top: -21px;
-  padding-top: 0px;
-}
-
 input#name, input#email {
   color: #FFFFFF;
 }
@@ -915,6 +913,17 @@ footer {
 /*---------------------------------------
  Responsive styles            
 -----------------------------------------*/
+@media screen and (max-width: 60em) {
+  #price .pricing__item {
+    max-width: none;
+    width: 100%;
+    flex: none;
+  }
+  #price .pricing__item:nth-child(2) {
+    border: 1px solid #fff;
+  }
+}
+
 @media (max-width: 980px) {
   #home {
     height: 65vh;
