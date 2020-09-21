@@ -64,3 +64,9 @@ function successAddMyEmail() {
     // button.value = "ENVIADO"
 	// $("#send").addClass("disabled")
 }
+
+function scrollUntilNewsletter() {
+	$([document.documentElement, document.body]).animate({
+        scrollTop: $("#newsletter").offset().top
+    }, 500);
+}
