@@ -51,13 +51,13 @@
 <section id="home">
 	<div class="container">
 		<div class="row">
-
-			<div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp">
-				<img src="images/logo/logo-04.png">
-				<h1>Programa para ganho de massa e definição muscular</h1>
-				<a href="#overview" class="smoothScroll btn btn-default">SAIBA MAIS</a>
+			<div class="col-md-12 col-sm-12 wow fadeInUp">
+				<div class="content">
+					<img src="images/logo/logo-04.png">
+					<h1>Programa para ganho de massa e definição muscular</h1>
+					<!-- <a href="#overview" class="smoothScroll btn btn-default">SAIBA MAIS</a> -->
+				</div>
 			</div>
-
 		</div>
 	</div>
 </section>
@@ -87,6 +87,7 @@
 		</div>
 	</div>
 </section>
+
 <!-- The modal -->
 <div id="moreInfoModal" class="modal">
 	<div onclick="goToTopFunction()" id="goToTopButton" title="Voltar ao topo"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
@@ -229,17 +230,22 @@
 				<h2>Inscrições</h2>
 				<p>Quer ser avisado quando abrir as inscrições!</p>
 				<div class="newsletter_detail">
-					<form action="#" method="post" id="newsletter-signup">
+					<div id="newsletter-signup">
 						<div class="col-md-6 col-sm-6">
+							<p>Entra no nosso grupo de whatsapp</p>
+							<a href="javascript:;" id="send" class="btn btn-default">ENTRAR <i class="fa fa-whatsapp"></i></a>
+					  	</div>
+						<div id="newsletter-email" class="col-md-6 col-sm-6">
 							<input name="name" type="text" class="form-control" id="name" placeholder="Nome">
-					  	</div>
-						<div class="col-md-6 col-sm-6">
+					  	<!--</div>
+						<div class="col-md-6 col-sm-6">-->
 							<input name="email" type="email" class="form-control" id="email" placeholder="Email">
-					  	</div>
-						<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
-							<input name="submit" type="submit" class="form-control disabled" id="send" value="ENVIAR">
+					  	<!--</div>
+						<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">-->
+							<a href="javascript:;" id="send" class="btn btn-default">ENVIAR</a>
+							<!--<input name="submit" type="submit" class="form-control disabled" id="send" value="ENVIAR"> -->
 						</div>
-				  	</form>
+				  	</div>
 				</div>
 			</div>
 
@@ -422,6 +428,8 @@
 		</div>
 	</div>
 </section>
+
+<a href="#newsletter" id="always-present"><i class="fa fa-cart-plus"></i> EU QUERO!</a>
 
 <footer>
 	<div class="container">
