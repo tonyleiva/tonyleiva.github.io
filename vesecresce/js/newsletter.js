@@ -66,7 +66,5 @@ function successAddMyEmail() {
 }
 
 function scrollUntilNewsletter() {
-	$([document.documentElement, document.body]).animate({
-        scrollTop: $("#newsletter").offset().top
-    }, 500);
+	window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
 }
