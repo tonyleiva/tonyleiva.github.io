@@ -12,6 +12,7 @@ if (modal != null && closeModal != null) {
 }
 
 function openMoreInfoModal() {
+	trackingClick(2)
     modal.style.display = "block"
 };
 
@@ -34,3 +35,13 @@ function goToTopFunction() {
 $("#moreInfoModal").scroll(() => {
 	scrollFunction()
 })
+
+async function trackingClick(itemID) {
+	$.ajax({
+		url: "/metric/trackingClick/",
+		type: "post",
+		data: "itemID=" + itemID,
+		success: () => { },
+		error: () => { }
+	})
+}
