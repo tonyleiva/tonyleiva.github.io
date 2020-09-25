@@ -1,7 +1,40 @@
+$(window).on("load", function () {
+  $(window).scroll(function () {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".trainer-overlay").each(function () {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        /* If the element is completely within bounds of the window, fade it in */
+        if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+          if ($(this).css("opacity") == 0) {
+            $(this).css("opacity", "0.9");
+            $(this).css("transform", "scale(0.9)");
+          }
+        } else { //object goes out of view (scrolling up)
+          if ($(this).css("opacity") == 0.9) {
+            $(this).css("opacity", "0");
+            $(this).css("transform", "scale(1.0)");
+          }
+        }
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+
 /*
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
 $(document).ready(function () {
+
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $(".trainer-overlay").each(function () {
+      $(this).css("height", "45%")
+      $(this).css("min-height", "230px")
+      $(this).css("top", "unset")
+    })
+  }
 
   /* template navigation
   -----------------------------------------------*/
