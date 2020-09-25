@@ -1153,4 +1153,5 @@ footer {
   text-align: center;
   line-height: 58px;
   margin: 4px;
+  cursor: pointer;
 }
