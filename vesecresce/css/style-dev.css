@@ -1141,3 +1141,16 @@ footer {
     margin-top: 32px;
   }
 }
+
+/* TEMP */
+.social-icon li div {
+  border-radius: 50%;
+  border: 1px solid #983cde;
+  background: #983cde;
+  width: 60px;
+  color: #fff;
+  height: 60px;
+  text-align: center;
+  line-height: 58px;
+  margin: 4px;
+}
