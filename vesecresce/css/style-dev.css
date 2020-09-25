@@ -1147,11 +1147,11 @@ footer {
   border-radius: 50%;
   border: 1px solid #983cde;
   background: #983cde;
-  width: 60px;
+  width: 75px;
   color: #fff;
-  height: 60px;
+  height: 75px;
   text-align: center;
-  line-height: 58px;
+  line-height: 70px;
   margin: 4px;
   cursor: pointer;
 }
