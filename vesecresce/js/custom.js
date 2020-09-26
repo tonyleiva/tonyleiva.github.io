@@ -1,7 +1,36 @@
+$(window).scroll(() => {
+  var windowBottom = $(this).scrollTop() + $(this).innerHeight()
+  $(".trainer-overlay").each(function () {
+    /* Check the location of each desired element */
+    var objectBottom = $(this).offset().top + $(this).outerHeight()
+
+    /* If the element is completely within bounds of the window, fade it in */
+    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+      if ($(this).css("opacity") == 0 && isMobileBrowser()) {
+        $(this).css("opacity", "0.9")
+        $(this).css("transform", "scale(0.9)")
+      }
+    } else { //object goes out of view (scrolling up)
+      if ($(this).css("opacity") == 0.9 && isMobileBrowser()) {
+        $(this).css("opacity", "0")
+        $(this).css("transform", "unset")
+      }
+    }
+  })
+})
+
 /*
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
 $(document).ready(function () {
+
+  if (isMobileBrowser()) {
+    $(".trainer-overlay").each(function () {
+      $(this).css("height", "45%")
+      $(this).css("min-height", "230px")
+      $(this).css("top", "unset")
+    })
+  }
 
   /* template navigation
   -----------------------------------------------*/
@@ -61,7 +90,7 @@ $(document).ready(function () {
 
   /* home slider section
  -----------------------------------------------*/
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  if (isMobileBrowser()) {
     $(function () {
       jQuery(document).ready(function () {
         $('#home').backstretch([
@@ -126,3 +155,7 @@ $(document).ready(function () {
     }
   }, 1000);
 });
+
+function isMobileBrowser() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+}
