@@ -702,6 +702,9 @@ a {
   background-position: center center;
   color: #26253a;
 }
+#benefits .header p {
+  padding: 0 8px 0 8px;
+}
 #benefits .benefits-item {
   position: relative;
   display: -webkit-flex;
