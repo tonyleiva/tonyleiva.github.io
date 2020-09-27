@@ -68,7 +68,7 @@ $(document).ready(function () {
   /*  smoothscroll
   ----------------------------------------------*/
   $(function () {
-    $('.navbar-default a, #home a').bind('click', function (event) {
+    $('.navbar-default a, #home a, #overview a').bind('click', function (event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top - 49
@@ -80,11 +80,8 @@ $(document).ready(function () {
   /* Parallax section
      -----------------------------------------------*/
   function initParallax() {
-    $('#home').parallax("100%", 0.1);
-    $('#trainer').parallax("100%", 0.2);
     $('#blog').parallax("100%", 0.1);
     $('#price').parallax("100%", 0.2);
-    $('#testimonial').parallax("100%", 0.2);
   }
   initParallax();
 
