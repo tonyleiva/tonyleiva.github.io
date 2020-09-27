@@ -32,7 +32,7 @@ h2 {
   text-transform: uppercase;
 }
 
-#trainer h2, #newsletter h2, #blog h2, #price h2 {
+#trainer h2, #newsletter h2, #blog h2, #benefits h2 {
   padding-bottom: 2px;
 }
 
@@ -66,12 +66,12 @@ a {
 /*---------------------------------------
   General               
 -----------------------------------------*/
-#trainer, #blog, #price, #countdown {
+#trainer, #blog, #benefits, #countdown {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
 
-#home, #trainer, #newsletter, #price, #testimonial, #blog-header {
+#home, #trainer, #newsletter, #benefits, #testimonial, #blog-header {
   text-align: center;
 }
 
@@ -81,18 +81,23 @@ a {
 }
 .btn {
 	background: #f67a3b;
-    border: 4px solid #f67a3b;
-    border-radius: 20px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
+  border: 4px solid #f67a3b;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
 	text-transform: uppercase;
 }
 .btn:hover {
 	border: 4px solid #f67a3b;
 	background: #ffffff;
 	color: #f67a3b;
+}
+.btn:focus {
+  background: #f67a3b;
+  border: 4px solid #f67a3b;
+  color: #ffffff;
 }
 #always-present {
 	 background: #f67a3b;
@@ -107,18 +112,12 @@ a {
     transition: all 0.4s ease-in-out;
     position: fixed;
     bottom: 25px;
-	/* top: 60px; */
     right: 5px;
     z-index: 99;
     font-size: 18px;
-    /* border: none; */
     outline: none;
-    /* background-image: linear-gradient(to bottom right, #c220eacc, #1e87cc); */
-    /* background-color: #f1cb80; */
-    /* color: white; */
     cursor: pointer;
     padding: 15px;
-    /* border-radius: 4px;*/
 }
 #always-present:hover {
   background: #ffffff;
@@ -291,7 +290,6 @@ a {
 }
 
 #home img {
-  /*padding-top: 355px;*/
   max-width: 280px;
   width: 36%;
   height: auto;
@@ -357,17 +355,15 @@ a {
   margin-top: 32px;
 }
 
-#overview .btn:hover {
-
-}
-
 /*---------------------------------------
  Trainer section              
 -----------------------------------------*/
-#trainer, #countdown {
-  background: #f9f9f9;
+#trainer {
+  background-image: linear-gradient(to bottom right, #1e87bb, #c220ea);
 }
-
+#trainer h2, #trainer p {
+  color: #ffffff;
+}
 #trainer h3 {
   letter-spacing: 1px;
   margin-top: 0px;
@@ -423,15 +419,14 @@ a {
  Newsletter section              
 -----------------------------------------*/
 #newsletter {
-/*  background: url('../images/newsletter-bg.jpg') 50% 0 repeat-y fixed;*/
   background-size: cover;
   background-position: center center;
-  color: #ffffff;
   padding-top: 12rem;
   padding-bottom: 12rem;
-  background-image: linear-gradient(to bottom right, #1e87bb, #c220ea);
 }
-
+#newsletter h2, #newsletter p {
+  color: #26253a;
+}
 #newsletter .newsletter_detail {
   padding-top: 3rem;
 }
@@ -439,7 +434,7 @@ a {
 #newsletter .form-control {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid #26253a40;
   border-radius: 0px;
   box-shadow: none;
   font-size: 20px;
@@ -448,7 +443,7 @@ a {
 }
 
 #newsletter .form-control:focus {
-  border-bottom-color: #ffffff;
+  border-bottom-color: #26253a40;
 }
 
 #newsletter input {
@@ -458,7 +453,6 @@ a {
 #newsletter input[type="submit"] {
   background: #26253a;
   border: none;
-  color: #ffffff;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 4px;
@@ -478,14 +472,16 @@ a {
   transition: all 0.4s ease-in-out;
   margin-top: 32px;
 }
-
-#newsletter .btn:hover {
-  
-}
 #newsletter-email {
-	border-left: 2px solid #ffffff;
+	border-left: 2px solid #26253a;
 }
-
+#newsletter input#name, #newsletter input#email {
+  color: #26253a;
+}
+#newsletter #send.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
 /*---------------------------------------
   Blog section              
 -----------------------------------------*/
@@ -698,17 +694,18 @@ a {
 }
 
 /*---------------------------------------
-  Price section              
+  Benefits section              
 -----------------------------------------*/
-#price {
-  background: url('../images/price-bg.jpg') 50% 0 repeat-y fixed;
+#benefits {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  color: #ffffff;
+  color: #26253a;
 }
-
-#price .pricing__item {
+#benefits .header p {
+  padding: 0 8px 0 8px;
+}
+#benefits .benefits-item {
   position: relative;
   display: -webkit-flex;
   display: flex;
@@ -720,174 +717,159 @@ a {
   -webkit-flex: 0 1 330px;
   flex: 0 1 330px;
 }
-
-#price .pricing__feature-list {
-  text-align: left;
+#benefits a.btn {
+  padding: 14px 46px;
+  transition: all 0.4s ease-in-out;
+  margin-top: 32px;
 }
-
-#price .pricing__action {
-  color: inherit;
-  border: none;
-  background: none;
-}
-
-#price .pricing__action:focus {
-  outline: none;
-}
-
-#price .pricing__item {
+#benefits .benefits-item {
   font-size: 20px;
   margin-top: 72px;
-  padding: 2em;
+  padding: 5px;
   cursor: default;
   color: #fff;
-  border: 1px solid #666;
   -webkit-transition: background-color 0.6s, color 0.3s;
   transition: background-color 0.6s, color 0.3s;
 }
-
-#price .pricing__item:nth-child(2) {
-  border-right: none;
-  border-left: none;
+#benefits .benefits-item p {
+  color: #26253a;
 }
-
-#price .pricing__item:hover {
+#benefits .benefits-item:hover {
   color: #444;
   background: #ffffff;
   border-color: transparent;
 }
-
-#price .pricing__title {
-  font-size: 2em;
+#benefits .benefits-title {
+  color: #26253a;
+  font-size: 20px;
   width: 100%;
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
+  line-height: normal;
 }
-
-#price .pricing__price {
+#benefits .benefits-icon {
   font-size: 1.45em;
   font-weight: bold;
-  line-height: 120px;
+  line-height: 129px;
   width: 120px;
   height: 120px;
-  margin: 1.15em auto 0.3em;
+  margin: 10px auto 10px;
   border-radius: 50%;
   background: #ffffff;
   -webkit-transition: color 0.3s, background 0.3s;
   transition: color 0.3s, background 0.3s;
 }
-
-#price .pricing__item:first-child .pricing__price {
-  background: #26253a;
+#benefits .benefits-item i.fa:before {
+  font-size: 45px;
+  color: #ffffff;
 }
-
-#price .pricing__item:nth-child(2) .pricing__price {
-  background: #26253a;
+#benefits .benefits-item:first-child .benefits-icon {
+  background-image: linear-gradient(to bottom right, #f1793b, #dd1c63);
 }
-
-#price .pricing__item:hover .pricing__price {
+#benefits .benefits-item:hover .benefits-icon {
   color: #fff;
-  background: #222;
-}
-
-#price .pricing__feature-list {
-  margin: 0;
-  padding: 1em 1em 2em 1em;
-  font-weight: bold;
-  list-style: none;
-  letter-spacing: 0.6px;
-  line-height: 32px;
-  text-align: center;
-}
-
-#price .pricing__action {
-  font-weight: bold;
-  margin-top: auto;
-  padding: 18px 48px;
-  opacity: 0;
-  color: #fff;
-  font-size: 20px;
-  background: #26253a;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  -webkit-transform: translate3d(0, -15px, 0);
-  transform: translate3d(0, -15px, 0);
-}
-
-#price .pricing__item:hover .pricing__action {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-#price .pricing__action:hover, #price .pricing__action:focus {
-  background: #222;
+  background-image: linear-gradient(to bottom right, #c220ea, #1e87bb);
 }
 
 /*---------------------------------------
   Testimonial section              
 -----------------------------------------*/
 #testimonial {
-  background: #ffffff;
-  color: #26253a;
+  color: #ffffff;
+  background-image: linear-gradient(to bottom right, #c220ea, #1e87bb);
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-
 #testimonial .fa {
   font-size: 42px;
   padding-bottom: 14px;
 }
-
 #testimonial h3 {
   letter-spacing: 1px;
+}
+#testimonial h4 {
+  color: #ffffff9e;
+}
+#testimonial .owl-theme .owl-controls .owl-page span {
+  border-color: #ffffff;
+}
+#testimonial .owl-theme .owl-controls .owl-page.active span {
+  background: #ffffff;
 }
 
 /*---------------------------------------
  Countdown section              
 -----------------------------------------*/
 #countdown {
-    background-image: linear-gradient(to bottom right, #c220ea, #1e87bb);
-    color: #fff;
+  color: #26253a;
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+.countdown .number {
+  color: #000;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient( to bottom, #b5b5b526 50%, #b5b5b552 0);
+  margin: 10px 5px 20px 5px;
+  font-size: 50px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 2.5rem #00000080;
+  position: relative;
+}
+.countdown .number::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #00000075;
+}
+.countdown .sub {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 5px 20px 5px;
+  width: 140px;
 }
 
 /*---------------------------------------
  Footer section              
 -----------------------------------------*/
 footer {
-  background: #26253a;
+  background-image: linear-gradient(to bottom right, #1e87bb, #c220ea);
   color: #ffffff;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-
 footer .col-md-5 {
   position: relative;
   left: 100px;
 }
-
 footer .col-md-5 div {
   padding-top: 10px;
 }
-
+footer p, footer a:before {
+  color: #ffffff;
+}
 footer h4 {
   margin-top: 0px;
 }
-
 footer .copyright-text {
-  padding-top: 80px;
+  font-size: 16px;
+  padding-top: 70px;
   text-align: center;
 }
-
-.copyright-text a {
-  color: #707070;
-  transition: all 0.4s ease-in-out;
+footer .social-icon li a {
+  font-size: 25px;
 }
-
-.copyright-text a:hover {
-  color: #ffffff;
+footer .social-icon li a:hover {
+  background: #df275e;
+}
+footer {
+  text-align: center;
 }
 
 /*---------------------------------------
@@ -898,12 +880,10 @@ footer .copyright-text {
   padding: 0;
   margin: 0;
 }
-
 .social-icon li {
   display: inline-block;
   list-style: none;
 }
-
 .social-icon li a {
   color: #999;
   border-radius: 100px;
@@ -916,74 +896,20 @@ footer .copyright-text {
   text-align: center;
   vertical-align: middle;
 }
-
 .social-icon li a:hover {
   background: #ffffff;
-}
-
-/** Countdown **/
-.countdown {
-  display: flex;
-  justify-content: center;
-}
-
-.countdown .number {
-  color: #000;
-  width: 140px;
-  height: 140px;
-  background: linear-gradient( to bottom, #ffffffd4 50%, #ffffffe8 0);
-  margin: 10px 5px 20px 5px;
-  font-size: 50px;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 10px 2.5rem #00000080;
-  position: relative;
-}
-
-.countdown .number::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #00000075;
-}
-
-.countdown .sub {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 10px 5px 20px 5px;
-  width: 140px;
-}
-
-input#name, input#email {
-  color: #FFFFFF;
-}
-
-#newsletter p {
-  color: #dedede;
-}
-
-#send.disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-footer {
-  text-align: center;
 }
 
 /*---------------------------------------
  Responsive styles            
 -----------------------------------------*/
 @media screen and (max-width: 60em) {
-  #price .pricing__item {
+  #benefits .benefits-item {
     max-width: none;
     width: 100%;
     flex: none;
   }
-  #price .pricing__item:nth-child(2) {
+  #benefits .benefits-item:nth-child(2) {
     border: 1px solid #fff;
   }
 }
@@ -1031,7 +957,7 @@ footer {
     font-size: 20px;
     line-height: 18px;
   }
-  #trainer, #blog, #price {
+  #trainer, #blog, #benefits {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
@@ -1072,7 +998,7 @@ footer {
   }
   #newsletter-email {
 	  border-left: none;
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid #26253a;
     margin: 10px 0 0 0;
     padding: 10px 0 0 0;
   }
@@ -1107,9 +1033,6 @@ footer {
   #overview .overview-detail {
     margin-top: 100px;
     top: 0px;
-  }
-  #price .pricing__action {
-    font-size: 13px;
   }
   footer {
     text-align: center;
