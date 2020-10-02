@@ -1,3 +1,11 @@
+$(window).ready(function() {
+	reziseVideoFrame()
+})
+
+$(window).resize(function() {
+	reziseVideoFrame()
+})
+
 $(window).scroll(() => {
   var windowBottom = $(this).scrollTop() + $(this).innerHeight()
   $(".trainer-overlay").each(function () {
@@ -155,4 +163,9 @@ $(document).ready(function () {
 
 function isMobileBrowser() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+}
+
+function reziseVideoFrame() {
+  $('.videoFrame').height(($('.videoFrame').width())*0.5625)
+  $('#video').height(($('.videoFrame').width())*0.5625)
 }

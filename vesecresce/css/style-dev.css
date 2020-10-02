@@ -309,6 +309,18 @@ a {
 	position: absolute;
     bottom: 45px;
 }
+
+/*---------------------------------------
+Video section
+-----------------------------------------*/
+#video {
+  text-align: center;
+  background: #000;
+}
+.videoFrame {
+  width: 100%;
+  max-width: 1550px;
+}
 /*---------------------------------------
  Overview  section              
 -----------------------------------------*/
