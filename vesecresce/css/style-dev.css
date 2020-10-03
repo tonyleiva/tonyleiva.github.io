@@ -388,14 +388,11 @@ a {
 /*---------------------------------------
 Video section
 -----------------------------------------*/
-div#videoModal {
+#videoModal {
   text-align: center;
+  background-color: #0000009e;
 }
-.video-modal {
-  text-align: center;
-  background: #000;
-}
-.videoFrame {
+#videoFrame {
   width: 90%;
   max-width: 1080px;
 }
@@ -1012,6 +1009,9 @@ footer {
   #overview {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+  #videoModal {
+    padding: 62% 0;
   }
   .countdown .number {
     width: 80px;

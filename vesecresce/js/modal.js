@@ -50,8 +50,7 @@ function goToTopFunction() {
 }
 
 function reziseVideoFrame() {
-	$('.videoFrame').height(($('.videoFrame').width())*0.5625)
-	$('.videoModal').height(($('.videoFrame').width())*0.5625)
+	$('#videoFrame').height(($('#videoFrame').width())*0.5625)
 }
 
 async function trackingClick(itemID) {
