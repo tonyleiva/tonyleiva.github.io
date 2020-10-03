@@ -1,11 +1,3 @@
-$(window).ready(function() {
-	reziseVideoFrame()
-})
-
-$(window).resize(function() {
-	reziseVideoFrame()
-})
-
 $(window).scroll(() => {
   var windowBottom = $(this).scrollTop() + $(this).innerHeight()
   $(".trainer-overlay").each(function () {
