@@ -14,7 +14,7 @@ if (modal != null && closeModal != null) {
 
 window.onclick = (event) => {
 	if (videoModal != null && event.target == videoModal) {
-		videoModal.style.display = "none"
+		closeVideoModal()
 	}
 }
 
@@ -28,9 +28,17 @@ function openMoreInfoModal() {
 }
 
 function openVideoModal() {
-	trackingClick(3)
 	videoModal.style.display = "block"
 	reziseVideoFrame()
+	var videoFrame = document.getElementById("videoFrame")
+	videoFrame.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+	trackingClick(3)
+}
+
+function closeVideoModal() {
+	var videoFrame = document.getElementById("videoFrame")
+	videoFrame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+	videoModal.style.display = "none"
 }
 
 function goToTop() {
