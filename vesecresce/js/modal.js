@@ -1,5 +1,6 @@
-//get the modal
+//get the modals
 var modal = document.getElementById("moreInfoModal");
+var videoModal = document.getElementById("videoModal");
 //get the <span> element that closes the modal
 var closeModal = document.getElementById("closeModal");
 
@@ -11,10 +12,26 @@ if (modal != null && closeModal != null) {
     }
 }
 
+window.onclick = (event) => {
+	if (videoModal != null && event.target == videoModal) {
+		videoModal.style.display = "none"
+	}
+}
+
+$("#moreInfoModal").scroll(() => {
+	scrollFunction()
+})
+
 function openMoreInfoModal() {
 	trackingClick(2)
     modal.style.display = "block"
-};
+}
+
+function openVideoModal() {
+	trackingClick(3)
+	videoModal.style.display = "block"
+	reziseVideoFrame()
+}
 
 function goToTop() {
 	$("#moreInfoModal").animate({ scrollTop: 0 }, 500)
@@ -32,9 +49,10 @@ function goToTopFunction() {
 	$("#moreInfoModal").animate({ scrollTop: 0 }, 500)
 }
 
-$("#moreInfoModal").scroll(() => {
-	scrollFunction()
-})
+function reziseVideoFrame() {
+	$('.videoFrame').height(($('.videoFrame').width())*0.5625)
+	$('.videoModal').height(($('.videoFrame').width())*0.5625)
+}
 
 async function trackingClick(itemID) {
 	$.ajax({
