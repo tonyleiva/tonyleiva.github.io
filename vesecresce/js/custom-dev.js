@@ -76,7 +76,7 @@ $(document).ready(function () {
   /*  smoothscroll
   ----------------------------------------------*/
   $(function () {
-    $('.navbar-default a, #home a, #overview a').bind('click', function (event) {
+    $('.navbar-default a, #home a, #overview a.btn').bind('click', function (event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top - 49
@@ -136,7 +136,7 @@ $(document).ready(function () {
   new WOW({ mobile: false }).init();
 
   /* countdown */
-  var countDownDate = new Date(2020, 10 - 1, 9, 12, 00, 00).getTime();
+  var countDownDate = new Date(2020, 10 - 1, 8, 21, 00, 00).getTime();
   // Update the count down every 1 second
   var x = setInterval(() => {
     // Get today's date and time
@@ -163,9 +163,4 @@ $(document).ready(function () {
 
 function isMobileBrowser() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-}
-
-function reziseVideoFrame() {
-  $('.videoFrame').height(($('.videoFrame').width())*0.5625)
-  $('#video').height(($('.videoFrame').width())*0.5625)
 }

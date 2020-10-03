@@ -60,17 +60,17 @@
 	</div>
 </section>
 
-<section id="video">
-	<iframe class="videoFrame" src="https://www.youtube.com/embed/ntKLPtylt6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<!--<object  data="https://www.youtube.com/embed/ntKLPtylt6o" allowfullscreen></object>-->
-</section>
-
 <section id="overview" class="parallax-section">
 	<div class="container">
 		<div class="row">
 
 			<div class="col-md-6 col-sm-12">
-				<img src="images/BoraGuria_LauBaldo-8616_02.jpg" class="img-responsive" alt="Overview">
+				<div class="video-container">
+					<div class="video-cover">
+						<img src="images/BoraGuria_LauBaldo-8616_02.jpg" class="img-responsive" alt="Overview">
+						<a href="javascript:;" id="play-video" class="video-cover-play" onclick="openVideoModal()"><i class="fa fa-caret-right"></i></a>
+					</div>
+				</div>
 				<blockquote class="wow fadeInUp" data-wow-delay="1s">Nutricionista, personal trainer e mentoria. Qual a sua desculpa? Vem crescer com a gente!</blockquote>
 			</div>
 
@@ -91,7 +91,10 @@
 	</div>
 </section>
 
-<!-- The modal -->
+<!-- The modals -->
+<div id="videoModal" class="modal">
+	<iframe class="videoFrame" src="https://www.youtube.com/embed/ntKLPtylt6o?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <div id="moreInfoModal" class="modal">
 	<div onclick="goToTopFunction()" id="goToTopButton" title="Voltar ao topo"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
     <!-- Modal content -->
