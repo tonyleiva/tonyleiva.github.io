@@ -469,6 +469,7 @@ Video section
 }
 #newsletter h2, #newsletter p {
   color: #26253a;
+  padding: 0 21px;
 }
 #newsletter .newsletter_detail {
   padding-top: 3rem;
