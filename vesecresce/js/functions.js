@@ -1,6 +1,10 @@
 function goToProduct() {
 	trackingClick(1)
-	window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
+	//window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
+	
+	$('html, body').stop().animate({
+		scrollTop: $("#newsletter").offset().top - 49
+	}, 1000)
 }
 
 function isMobileBrowser() {
