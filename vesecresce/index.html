@@ -68,7 +68,7 @@
 				<div class="video-container">
 					<div class="video-cover">
 						<img src="images/BoraGuria_LauBaldo-8616_02.jpg" class="img-responsive" alt="Overview">
-						<a href="javascript:;" id="play-video" class="video-cover-play" onclick="openVideoModal()"><i class="fa fa-caret-right"></i></a>
+						<a href="javascript:;" class="video-cover-play" onclick="openVideoModal()"><i class="fa fa-caret-right"></i></a>
 					</div>
 				</div>
 				<blockquote class="wow fadeInUp" data-wow-delay="1s">Nutricionista, personal trainer e mentoria. Qual a sua desculpa? Vem crescer com a gente!</blockquote>
@@ -81,7 +81,7 @@
 					<h2>Vê Se Cresce</h2>
 					<p>Programa com duração de 4 semanas para você que deseja ganhar massa ou obter definição muscular.</p>
 					<p>Você será acompanhado em tempo integral por uma equipe multidisciplinar composta por nutricionista esportiva, personal trainer e mentora-meta cognitiva. Sim, tudo isso em um só programa!</p>
-					<a href="#benefits" class="btn btn-default smoothScroll">VANTAGENS</a>
+					<a href="#benefits" id="goToBenefits" class="btn btn-default smoothScroll">VANTAGENS</a>
 				</div>
 			</div>
 
@@ -530,7 +530,7 @@
 
 			<div class="col-md-12 col-sm-12 text-center">
 				<h2>Lançamento</h2>
-				<p></p>
+				<p>As inscrições iniciam dia 08 de outubro de 2020</p>
 				<div class="countdown">
 					<div>
 						<div class="number" id="cdDays"></div>
@@ -555,7 +555,7 @@
 	</div>
 </section>
 
-<div onclick="scrollUntilNewsletter()" id="always-present"><i class="fa fa-cart-plus"></i> EU QUERO!</div>
+<div onclick="goToProduct()" id="always-present"><i class="fa fa-cart-plus"></i> EU QUERO!</div>
 
 <footer>
 	<div class="container">
@@ -592,6 +592,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/functions.js"></script>
 <script src="js/custom-dev.js?id=20200920"></script>
 <script src="js/modal.js"></script>
 <script src="js/newsletter.js"></script>
