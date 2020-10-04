@@ -463,11 +463,13 @@ Video section
 #newsletter {
   background-size: cover;
   background-position: center center;
-  padding-top: 12rem;
+  margin-top: 8em;
+  padding-top: 4rem;
   padding-bottom: 12rem;
 }
 #newsletter h2, #newsletter p {
   color: #26253a;
+  padding: 0 21px;
 }
 #newsletter .newsletter_detail {
   padding-top: 3rem;
@@ -881,7 +883,7 @@ Video section
  Footer section              
 -----------------------------------------*/
 footer {
-  background-image: linear-gradient(to bottom right, #1e87bb, #c220ea);
+  background-image: linear-gradient(to bottom right, #23002b, #003752);
   color: #ffffff;
   padding-top: 8rem;
   padding-bottom: 8rem;
