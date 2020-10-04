@@ -882,7 +882,7 @@ Video section
  Footer section              
 -----------------------------------------*/
 footer {
-  background-image: linear-gradient(to bottom right, #003752, #23002b);
+  background-image: linear-gradient(to bottom right, #23002b, #003752);
   color: #ffffff;
   padding-top: 8rem;
   padding-bottom: 8rem;
