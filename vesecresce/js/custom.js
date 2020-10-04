@@ -68,11 +68,14 @@ $(document).ready(function () {
   /*  smoothscroll
   ----------------------------------------------*/
   $(function () {
-    $('.navbar-default a, #home a, #overview a.btn').bind('click', function (event) {
+    $('.navbar-default a, #home a, #goToBenefits').bind('click', function (event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top - 49
       }, 1000);
+      if (this.id == "goToBenefits") {
+        trackingClick(4)
+      }
       event.preventDefault();
     });
   });
@@ -152,7 +155,3 @@ $(document).ready(function () {
     }
   }, 1000);
 });
-
-function isMobileBrowser() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-}
