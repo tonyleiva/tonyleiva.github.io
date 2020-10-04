@@ -5,7 +5,7 @@ function goToProduct() {
 	var now = new Date().getTime()
 	if (launchDatetime > now) {
 		$('html, body').stop().animate({
-			scrollTop: $("#newsletter").offset().top - 49
+			scrollTop: $("#newsletter").offset().top
 		}, 1000)
 	} else {
 		window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
