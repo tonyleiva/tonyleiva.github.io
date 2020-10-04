@@ -1,14 +1,14 @@
 //get the modals
-var modal = document.getElementById("moreInfoModal");
-var videoModal = document.getElementById("videoModal");
+var moreInfoModal = document.getElementById("moreInfoModal")
+var videoModal = document.getElementById("videoModal")
 //get the <span> element that closes the modal
-var closeModal = document.getElementById("closeModal");
+var closeMoreInfoModalBtn = document.getElementById("closeModal")
 
-var goToTopButton = document.getElementById("goToTopButton");
+var goToTopButton = document.getElementById("goToTopButton")
 
-if (modal != null && closeModal != null) {
-    closeModal.onclick = function() {
-        modal.style.display = "none";
+if (moreInfoModal != null && closeMoreInfoModalBtn != null) {
+    closeMoreInfoModalBtn.onclick = function() {
+        closeMoreInfoModal()
     }
 }
 
@@ -24,7 +24,11 @@ $("#moreInfoModal").scroll(() => {
 
 function openMoreInfoModal() {
 	trackingClick(2)
-    modal.style.display = "block"
+    moreInfoModal.style.display = "block"
+}
+
+function closeMoreInfoModal() {
+	moreInfoModal.style.display = "none"
 }
 
 function openVideoModal() {
@@ -37,7 +41,7 @@ function openVideoModal() {
 
 function closeVideoModal() {
 	var videoFrame = document.getElementById("videoFrame")
-	videoFrame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+	videoFrame.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
 	videoModal.style.display = "none"
 }
 
