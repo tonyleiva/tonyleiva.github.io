@@ -7,9 +7,9 @@ var closeMoreInfoModalBtn = document.getElementById("closeModal")
 var goToTopButton = document.getElementById("goToTopButton")
 
 if (moreInfoModal != null && closeMoreInfoModalBtn != null) {
-    closeMoreInfoModalBtn.onclick = function() {
-        closeMoreInfoModal()
-    }
+    closeMoreInfoModalBtn.onclick = () => {
+		closeMoreInfoModal()
+	}
 }
 
 window.onclick = (event) => {
@@ -63,14 +63,4 @@ function goToTopFunction() {
 
 function reziseVideoFrame() {
 	$('#videoFrame').height(($('#videoFrame').width())*0.5625)
-}
-
-async function trackingClick(itemID) {
-	$.ajax({
-		url: "/metric/trackingClick/",
-		type: "post",
-		data: "itemID=" + itemID,
-		success: () => { },
-		error: () => { }
-	})
 }

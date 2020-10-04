@@ -64,18 +64,3 @@ function successAddMyEmail() {
     // button.value = "ENVIADO"
 	// $("#send").addClass("disabled")
 }
-
-function scrollUntilNewsletter() {
-	trackingClick(1)
-	window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
-}
-
-async function trackingClick(itemID) {
-	$.ajax({
-		url: "/metric/trackingClick/",
-		type: "post",
-		data: "itemID=" + itemID,
-		success: () => { },
-		error: () => { }
-	})
-}
