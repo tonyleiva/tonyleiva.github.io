@@ -146,7 +146,6 @@ $(document).ready(function () {
     
     // If the count down is finished, write some text
     if (distance > 0) {
-      // Display the result in the element with id="demo"
       document.getElementById("cdDays").innerHTML = days
       document.getElementById("cdHours").innerHTML = hours
       document.getElementById("cdMinutes").innerHTML = minutes

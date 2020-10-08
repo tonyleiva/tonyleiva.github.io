@@ -20,6 +20,10 @@ function getProductLaunchDatetime() {
 	return new Date(2020, 10 - 1, 8, 21, 00, 00).getTime()
 }
 
+function getProductEndDatetime() {
+	return new Date(2020, 10 - 1, 13, 23, 59, 00).getTime()
+}
+
 function copyToClipboard(elementId) {
     var el = document.createElement('textarea');
     el.value = elementId;
