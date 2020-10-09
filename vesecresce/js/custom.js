@@ -131,7 +131,7 @@ $(document).ready(function () {
   new WOW({ mobile: false }).init();
 
   /* countdown */
-  var countDownDate = getProductLaunchDatetime()
+  var countDownDate = getProductEndDatetime()
   // Update the count down every 1 second
   var x = setInterval(() => {
     // Get today's date and time
