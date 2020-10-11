@@ -1,29 +1,31 @@
 function goToProduct() {
 	trackingClick(1)
+	window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
 
-	var launchDatetime = getProductLaunchDatetime()
-	var now = new Date().getTime()
-	if (launchDatetime > now) {
-		$('html, body').stop().animate({
-			scrollTop: $("#newsletter").offset().top
-		}, 1000)
-	} else {
-		window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
-	}
+	// var launchDatetime = getProductLaunchDatetime()
+	// var now = new Date().getTime()
+	// if (launchDatetime > now) {
+	// 	$('html, body').stop().animate({
+	// 		scrollTop: $("#newsletter").offset().top
+	// 	}, 1000)
+	// } else {
+	// 	window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
+	// }
 }
 
 function goToInscription() {
 	trackingClick(5)
+	window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
 
-	var launchDatetime = getProductLaunchDatetime()
-	var now = new Date().getTime()
-	if (launchDatetime > now) {
-		$('html, body').stop().animate({
-			scrollTop: $("#newsletter").offset().top
-		}, 1000)
-	} else {
-		window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
-	}
+	// var launchDatetime = getProductLaunchDatetime()
+	// var now = new Date().getTime()
+	// if (launchDatetime > now) {
+	// 	$('html, body').stop().animate({
+	// 		scrollTop: $("#newsletter").offset().top
+	// 	}, 1000)
+	// } else {
+	// 	window.open("https://www.hotmart.com/product/programa-ve-se-cresce/H41183358H", "_blank")
+	// }
 }
 
 function isMobileBrowser() {
