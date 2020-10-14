@@ -514,7 +514,8 @@ Video section
 #newsletter .btn {
   padding: 14px 46px;
   transition: all 0.4s ease-in-out;
-  margin-top: 32px;
+  margin-top: 22px;
+  margin-bottom: 15px;
 }
 #newsletter-email {
 	border-left: 2px solid #26253a;
@@ -850,6 +851,7 @@ Video section
 .countdown {
   display: flex;
   justify-content: center;
+  display: none;
 }
 .countdown .number {
   color: #000;
