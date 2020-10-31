@@ -97,7 +97,6 @@ $(document).ready(function () {
           "https://github.com/tonyleiva/tonyleiva.github.io/raw/master/vesecresce/images/vesecresce-mobile-cover-cs.jpeg",
           "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8572.jpg",
           "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8573_02.jpg",
-          "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8586_02.jpg",
         ], { duration: 2000, fade: 750 });
       });
     })
@@ -106,7 +105,6 @@ $(document).ready(function () {
       jQuery(document).ready(function () {
         $('#home').backstretch([
           "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8603_02.jpg",
-          "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8616_02.jpg",
         ], { duration: 2000, fade: 750 });
       });
     })
@@ -131,7 +129,7 @@ $(document).ready(function () {
   new WOW({ mobile: false }).init();
 
   /* countdown */
-  var countDownDate = getProductEndDatetime()
+  var countDownDate = getProductLaunchDatetime()
   // Update the count down every 1 second
   var x = setInterval(() => {
     // Get today's date and time
@@ -152,10 +150,8 @@ $(document).ready(function () {
       document.getElementById("cdSeconds").innerHTML = seconds
     } else {
       clearInterval(x);
-      document.getElementById("cdDays").innerHTML = 0
-      document.getElementById("cdHours").innerHTML = 0
-      document.getElementById("cdMinutes").innerHTML = 0
-      document.getElementById("cdSeconds").innerHTML = 0
+      document.getElementById("countdownBtn").style.display = "block"
+      document.getElementById("numbers").style.display = "none"
     }
   }, 1000);
 });
