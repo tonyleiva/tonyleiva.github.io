@@ -1,6 +1,7 @@
 /* tonyleivah */
-//$("#name").on("input", () => validateName())
+$("#name").on("input", () => validateEmail())
 $("#email").on("input", () => validateEmail())
+$("#phone").on("input", () => validateEmail())
 $("#send").click((event) => sendClick(event))
 
 function validateInput() {
