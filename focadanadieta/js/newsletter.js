@@ -50,9 +50,9 @@ function addMyEmail() {
 		url : "/programa/addMyEmail/",
 		type : "post",
 		data : {
-			name: $("#name").val() == "" ? "-" : $("#name").val(),
+			name: $("#name").val(),
 			email: $('#email').val(),
-			phone: $("#phone").val() == "" ? "-" : $("#phone").val(),
+			phone: $("#phone").val(),
 			campaign: "focadanadieta"
 		},
 		success: () => { successAddMyEmail() },
