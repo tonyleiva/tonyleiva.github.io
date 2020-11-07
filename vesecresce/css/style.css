@@ -461,6 +461,7 @@ Video section
  Newsletter section              
 -----------------------------------------*/
 #newsletter {
+  display: none;
   background-size: cover;
   background-position: center center;
   padding-top: 4rem;
@@ -510,7 +511,8 @@ Video section
   color: #26253a;
 }
 
-#newsletter .btn {
+#newsletter .btn,
+#countdown .btn {
   padding: 14px 46px;
   transition: all 0.4s ease-in-out;
   margin-top: 22px;
@@ -846,15 +848,18 @@ Video section
 -----------------------------------------*/
 #countdown {
   color: #26253a;
-  padding-bottom: 0px;
+  /* padding-bottom: 0px; */
 }
 .countdown {
   display: flex;
   justify-content: center;
   /* display: none; */
 }
-#countdownBtn {
+#countdown #numbers {
   display: none;
+}
+#countdownBtn {
+  /* display: none; */
 }
 .countdown .number {
   color: #000;

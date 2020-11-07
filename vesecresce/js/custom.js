@@ -150,8 +150,8 @@ $(document).ready(function () {
       document.getElementById("cdSeconds").innerHTML = seconds
     } else {
       clearInterval(x);
-      document.getElementById("countdownBtn").style.display = "block"
-      document.getElementById("numbers").style.display = "none"
+      // document.getElementById("countdownBtn").style.display = "unset"
+      // document.getElementById("numbers").style.display = "none"
     }
   }, 1000);
 });

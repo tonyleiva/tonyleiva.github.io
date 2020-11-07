@@ -1,15 +1,16 @@
 function goToProduct() {
 	trackingClick(1)
+	window.open("https://www.sympla.com.br/programa-ve-se-cresce---aceleradas__1037648", "_blank")
 	
-	var launchDatetime = getProductLaunchDatetime()
-	var now = new Date().getTime()
-	if (launchDatetime > now) {
-		$('html, body').stop().animate({
-			scrollTop: $("#countdown").offset().top - 10
-		}, 1000)
-	} else {
-		window.open("https://www.sympla.com.br/programa-ve-se-cresce---aceleradas__1037648", "_blank")
-	}
+	// var launchDatetime = getProductLaunchDatetime()
+	// var now = new Date().getTime()
+	// if (launchDatetime > now) {
+	// 	$('html, body').stop().animate({
+	// 		scrollTop: $("#countdown").offset().top - 10
+	// 	}, 1000)
+	// } else {
+	// 	window.open("https://www.sympla.com.br/programa-ve-se-cresce---aceleradas__1037648", "_blank")
+	// }
 }
 
 function goToInscription() {
@@ -32,7 +33,7 @@ function isMobileBrowser() {
 }
 
 function getProductLaunchDatetime() {
-	return new Date(2020, 11 - 1, 6, 21, 00, 00).getTime()
+	return new Date(2020, 11 - 1, 6, 11, 00, 00).getTime()
 }
 
 function getProductEndDatetime() {
