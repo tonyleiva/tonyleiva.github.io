@@ -1,6 +1,6 @@
 function goToProduct() {
 	trackingClick(1)
-	window.open("https://www.sympla.com.br/programa-ve-se-cresce---aceleradas__1037648", "_blank")
+	window.open("https://www.sympla.com.br/programa-ve-se-cresce__1099946", "_blank")
 	
 	// var launchDatetime = getProductLaunchDatetime()
 	// var now = new Date().getTime()
@@ -15,7 +15,7 @@ function goToProduct() {
 
 function goToInscription() {
 	trackingClick(5)
-	window.open("https://www.sympla.com.br/programa-ve-se-cresce---aceleradas__1037648", "_blank")
+	window.open("https://www.sympla.com.br/programa-ve-se-cresce__1099946", "_blank")
 
 	// var launchDatetime = getProductLaunchDatetime()
 	// var now = new Date().getTime()
@@ -33,11 +33,11 @@ function isMobileBrowser() {
 }
 
 function getProductLaunchDatetime() {
-	return new Date(2020, 11 - 1, 6, 11, 00, 00).getTime()
+	return new Date(2021, 1 - 1, 18, 11, 00, 00).getTime()
 }
 
 function getProductEndDatetime() {
-	return new Date(2020, 11 - 1, 13, 23, 59, 00).getTime()
+	return new Date(2021, 1 - 1, 18, 11, 00, 00).getTime()
 }
 
 function copyToClipboard(elementId) {
