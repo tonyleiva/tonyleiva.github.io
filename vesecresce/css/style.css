@@ -842,6 +842,24 @@ Video section
 #testimonial .owl-theme .owl-controls .owl-page.active span {
   background: #ffffff;
 }
+#testimonial .previous {
+  padding-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fff;
+}
+#testimonial .previous p {
+  color: #ffffff;
+}
+#testimonial .previous .previous-thumb {
+  text-align: center;
+  border: 0px solid #f0f0f0;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#testimonial .commentaries {
+  padding-top: 40px;
+}
 
 /*---------------------------------------
  Countdown section              
