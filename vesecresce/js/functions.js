@@ -1,7 +1,11 @@
 function goToProduct() {
 	trackingClick(1)
-	window.open("https://www.sympla.com.br/programa-ve-se-cresce__1099946", "_blank")
+	// window.open("https://www.sympla.com.br/programa-ve-se-cresce__1099946", "_blank")
 	
+	$('html, body').stop().animate({
+		scrollTop: $("#newsletter").offset().top - 30
+	}, 1000)
+
 	// var launchDatetime = getProductLaunchDatetime()
 	// var now = new Date().getTime()
 	// if (launchDatetime > now) {

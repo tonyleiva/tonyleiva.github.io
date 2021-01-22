@@ -50,7 +50,8 @@ function addMyEmail() {
 		type : "post",
 		data : {
 			name: $("#name").val() == "" ? "-" : $("#name").val(),
-			email: $('#email').val()
+			email: $('#email').val(),
+			campaign: "vesecresce - turma 4"
 		},
 		success: () => { successAddMyEmail() },
 		error: () => { successAddMyEmail() }
