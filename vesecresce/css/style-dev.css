@@ -836,7 +836,7 @@ Video section
   -webkit-flex: 0 1 330px;
   flex: 0 1 330px;
   font-size: 20px;
-  margin-top: 72px;
+  margin: 72px 15px 0px 15px;
   padding: 25px;
   cursor: default;
   color: #ffffff;
