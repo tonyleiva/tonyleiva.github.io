@@ -991,6 +991,36 @@ Video section
 #price .pricing__action:hover, #price .pricing__action:focus {
   font-weight: bold;
 }
+#price .container.combos {margin-top: 60px;}
+#price .container.combos a {
+  /* display: block;
+  margin: 0px 0px 30px 0px; */
+  display: block;
+  margin: 0px 0px 30px 0px;
+}
+#price .container.combos .row .yyy:nth-child(1) .xxx{background:#9647bc;}
+#price .container.combos .row .yyy:nth-child(2) .xxx{background:#7dc8bb;}
+#price .container.combos .row .yyy:nth-child(3) .xxx{background:#f17536;}
+#price .combo_icon {
+  /* width: 15%;
+  float: left;
+  padding: 34px 0px; */
+  display: table-cell;
+  padding-left: 10px;
+  padding-right: 18px;
+  vertical-align: middle;
+}
+#price .combo_icon i{font-size: 70px;color:#ffffff;}
+#price .combo_description{
+  /* background: black;
+  padding: 20px;
+  text-align: left;
+  background: black; */
+  padding: 30px 20px;
+  display: table;
+}
+#price .combo_description p{text-align: left;color:#ffffff;}
+#price .combo_description h2{text-align: left;color:#ffffff;margin: 0 0 10px 0;}
 
 /*---------------------------------------
   Testimonial section              
