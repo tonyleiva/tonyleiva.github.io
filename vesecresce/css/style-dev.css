@@ -32,7 +32,7 @@ h2 {
   text-transform: uppercase;
 }
 
-#timeline h2, #trainer h2, #newsletter h2, #blog h2, #benefits h2, #price h2{
+#overview h2, #timeline h2, #trainer h2, #newsletter h2, #blog h2, #benefits h2, #price h2{
   padding-bottom: 2px;
   text-align: center;
 }
@@ -75,7 +75,9 @@ a {
 #home, #trainer, #newsletter, #benefits, #price, #testimonial, #blog-header {
   text-align: center;
 }
-
+.section-header {
+  text-align: center;
+}
 .parallax-section {
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -384,81 +386,6 @@ a {
 }
 
 /*---------------------------------------
- Overview  section              
------------------------------------------*/
-#overview {
-  padding-top: 14rem;
-  padding-bottom: 20rem;
-  position: relative;
-  background-image: linear-gradient(to bottom right, #c220ea, #1e87bb);
-}
-
-#overview img {
-  border: 4px solid #f9f9f9;
-  padding: 20px 20px 20px 20px;
-}
-#overview .video-container{
-  position: inherit;
-}
-#overview .video-cover{
-  display: table-cell;
-  vertical-align: middle;
-}
-#overview a.video-cover-play {
-  margin-left: auto;
-  margin-right: auto;
-  top: 0;
-  margin: 40px 40px 40px 40px;
-  padding: 25% 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  position: absolute;
-  transition: all .1s ease-in-out;
-}
-#overview a.video-cover-play:hover {
-  transform: scale(1.1);
-}
-#overview .video-cover-play i.fa {
-  background: #ee0203;
-  padding: 5px 15px 5px 20px;
-  border-radius: 8px;
-  font-size: 29px;
-  transform: scale(1.4, 1.0);
-  color: #fff;
-}
-#overview blockquote {
-  background: #ffffff;
-  color: #df275e;
-  box-shadow: 0px 2px 8px 10px rgba(50, 50, 50, 0.04);
-  border-left: 8px solid #df275e;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  position: absolute;
-  font-size: 20px;
-  top: 350px;
-  left: 80px;
-  padding: 62px 52px;
-}
-
-#overview .overview-detail {
-  text-align: center;
-  position: relative;
-  top: 40px;
-}
-#overview .overview-detail h2 {
-  color: #fff;
-}
-#overview .overview-detail p {
-  color: #fff;
-}
-#overview .btn {
-  padding: 14px 46px;
-  transition: all 0.4s ease-in-out;
-  margin-top: 32px;
-}
-
-/*---------------------------------------
 Video section
 -----------------------------------------*/
 #videoModal {
@@ -484,15 +411,21 @@ Video section
   margin-top: 0px;
   padding-bottom: 12px;
 }
-
 #trainer img {
   width: 100%;
+  border: 3px solid #f9f9f9;
+  padding: 15px 15px 15px 15px;
 }
-
+#trainer img.frame {
+  border: 4px solid #f9f9f9;
+  padding: 20px 20px 20px 20px;
+}
 #trainer .trainer-thumb {
   position: relative;
-  margin-top: 72px;
-  margin-bottom: 32px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
   padding: 0px;
 }
 
@@ -500,20 +433,19 @@ Video section
   background: #26253a;
   color: #ffffff;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   text-align: center;
   vertical-align: middle;
   opacity: 0;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 18px;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
   transition: all 0.4s ease-in-out;
 }
-
 #trainer .trainer-thumb:hover .trainer-overlay {
-  opacity: 0.9;
+  opacity: 0.85;
   transform: scale(0.9);
 }
 
@@ -530,6 +462,56 @@ Video section
   transform: translate(-50%, -50%);
 }
 
+#trainer .video-container{
+  position: inherit;
+  margin-bottom: 60px;
+}
+#trainer .video-cover{
+  display: table-cell;
+  vertical-align: middle;
+}
+#trainer a.video-cover-play {
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  margin: 40px 40px 40px 40px;
+  padding: 25% 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  transition: all .1s ease-in-out;
+}
+#trainer a.video-cover-play:hover {
+  transform: scale(1.1);
+}
+#trainer .video-cover-play i.fa {
+  background: #ee0203;
+  padding: 5px 15px 5px 20px;
+  border-radius: 8px;
+  font-size: 29px;
+  transform: scale(1.4, 1.0);
+  color: #fff;
+}
+#trainer blockquote {
+  background: #ffffff;
+  color: #df275e;
+  box-shadow: 0px 2px 8px 10px rgba(50, 50, 50, 0.04);
+  border-left: 8px solid #df275e;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  position: absolute;
+  font-size: 20px;
+  top: 350px;
+  left: 80px;
+  padding: 62px 52px;
+}
+
+#trainer .btn {
+  padding: 14px 46px;
+  transition: all 0.4s ease-in-out;
+  margin-top: 32px;
+}
 /*---------------------------------------
  Newsletter section              
 -----------------------------------------*/
@@ -998,9 +980,10 @@ Video section
   display: block;
   margin: 0px 0px 30px 0px;
 }
-#price .container.combos .row .yyy:nth-child(1) .xxx{background:#9647bc;}
-#price .container.combos .row .yyy:nth-child(2) .xxx{background:#7dc8bb;}
-#price .container.combos .row .yyy:nth-child(3) .xxx{background:#f17536;}
+#price .container.combos .row .pacoteItem:nth-child(1) .xxx{background:#9647bc;}
+#price .container.combos .row .pacoteItem:nth-child(2) .xxx{background:#7dc8bb;}
+#price .container.combos .row .pacoteItem:nth-child(3) .xxx{background:#f17536;}
+#price .container.combos .row .pacoteItem:nth-child(4) .xxx{background:#e94055;}
 #price .combo_icon {
   /* width: 15%;
   float: left;
@@ -1196,17 +1179,23 @@ footer {
   #home {
     height: 65vh;
   }
-  #overview {
+  #trainer  {
     text-align: center;
   }
-  #overview blockquote {
+  #trainer  blockquote {
     top: 260px;
     padding: 82px;
   }
-  #overview .overview-detail {
+  #trainer .overview-detail {
     margin-left: 20px;
     top: 72px;
   }
+  #trainer .video-container {
+    margin-bottom: 0px;
+  }
+  /* #trainer .trainer-thumb {
+    margin-bottom: 72px;
+  } */
   footer .col-md-5 {
     left: 30px;
   }
@@ -1216,12 +1205,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-  #overview blockquote {
+  #trainer  blockquote {
     top: 306px;
     left: 30px;
     right: 10px;
   }
-  #overview a.video-cover-play {
+  #trainer  a.video-cover-play {
     padding: 19% 0;
   }
   .navbar-brand img {
@@ -1242,7 +1231,7 @@ footer {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-  #overview {
+  #trainer {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
@@ -1311,12 +1300,8 @@ footer {
   p {
     font-size: 17px;
   }
-  #overview img {
+  #trainer img.frame {
     margin-bottom: -60px;
-  }
-  #overview .overview-detail {
-    margin-top: 100px;
-    top: 0px;
   }
   footer {
     text-align: center;
@@ -1333,7 +1318,7 @@ footer {
 }
 
 @media (max-width: 650px) {
-  #overview blockquote {
+  #trainer blockquote {
     position: relative;
     margin-top: 7px;
     margin-left: 7px;
@@ -1343,11 +1328,8 @@ footer {
 }
 
 @media (max-width: 450px) {
-  #overview blockquote {
+  #trainer blockquote {
     padding: 32px;
-  }
-  #overview .overview-detail {
-    margin-top: 32px;
   }
 }
 

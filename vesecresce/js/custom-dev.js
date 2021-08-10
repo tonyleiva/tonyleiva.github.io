@@ -25,17 +25,20 @@ $(window).scroll(() => {
 $(document).ready(function () {
 
   if (isMobileBrowser()) {
-    $(".trainer-overlay").each(function () {
+    $(".trainer-overlay").each(function() {
       $(this).css("height", "45%")
       $(this).css("min-height", "230px")
       $(this).css("top", "unset")
+    })
+    $(".trainer-des").each(function() {
+      $(this).css("width", "90%")
     })
   }
 
   /* template navigation
   -----------------------------------------------*/
   $('.main-navigation').onePageNav({
-    scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
+    // scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
     scrollOffset: 75, //Height of Navigation Bar
     filter: ':not(.external)',
     changeHash: true
