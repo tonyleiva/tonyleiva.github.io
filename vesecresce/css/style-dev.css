@@ -71,7 +71,9 @@ a {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
-
+#price {
+  padding-bottom: 0rem;
+}
 #home, #trainer, #newsletter, #benefits, #price, #testimonial, #blog-header {
   text-align: center;
 }
@@ -304,6 +306,7 @@ a {
   line-height: normal;
   margin-top: -21px;
   padding-top: 0px;
+  letter-spacing: 10px;
 }
 
 #home > .container > .row > div {
@@ -519,6 +522,9 @@ Video section
   padding: 14px 46px;
   transition: all 0.4s ease-in-out;
   margin-top: 32px;
+}
+#trainer #mais-sobre-nos {
+  margin-top: 55px;
 }
 /*---------------------------------------
  VideoTwo section              
@@ -1355,6 +1361,9 @@ footer {
   }
   #trainer img.frame {
     margin-bottom: -60px;
+  }
+  #trainer #video-vantagens img.frame {
+    margin-bottom: 0px;
   }
   footer {
     text-align: center;
