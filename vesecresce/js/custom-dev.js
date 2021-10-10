@@ -87,7 +87,6 @@ $(document).ready(function () {
      -----------------------------------------------*/
   function initParallax() {
     $('#blog').parallax("100%", 0.1);
-    $('#price').parallax("100%", 0.2);
   }
   initParallax();
 

@@ -1,6 +1,8 @@
 //get the modals
 var moreInfoModal = document.getElementById("moreInfoModal")
 var videoModal = document.getElementById("videoModal")
+var videoEquipeModal = document.getElementById("videoEquipeModal")
+
 //get the <span> element that closes the modal
 var closeMoreInfoModalBtn = document.getElementById("closeModal")
 
@@ -15,6 +17,8 @@ if (moreInfoModal != null && closeMoreInfoModalBtn != null) {
 window.onclick = (event) => {
 	if (videoModal != null && event.target == videoModal) {
 		closeVideoModal()
+	} else if (videoEquipeModal != null && event.target == videoEquipeModal) {
+		closeVideoEquipeModal()
 	}
 }
 
@@ -45,6 +49,20 @@ function closeVideoModal() {
 	videoModal.style.display = "none"
 }
 
+function openVideoEquipeModal() {
+	videoEquipeModal.style.display = "block"
+	reziseVideoEquipeFrame()
+	var videoEquipeFrame = document.getElementById("videoEquipeFrame")
+	videoEquipeFrame.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+	trackingClick(4)
+}
+
+function closeVideoEquipeModal() {
+	var videoEquipeFrame = document.getElementById("videoEquipeFrame")
+	videoEquipeFrame.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+	videoEquipeModal.style.display = "none"
+}
+
 function goToTop() {
 	$("#moreInfoModal").animate({ scrollTop: 0 }, 500)
 }
@@ -63,4 +81,8 @@ function goToTopFunction() {
 
 function reziseVideoFrame() {
 	$('#videoFrame').height(($('#videoFrame').width())*0.5625)
+}
+
+function reziseVideoEquipeFrame() {
+	$('#videoEquipeFrame').height(($('#videoEquipeFrame').width())*0.5625)
 }
