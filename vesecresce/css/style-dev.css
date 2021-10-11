@@ -128,6 +128,11 @@ a {
   background: #ffffff;
   color: #f67a3b;
 }
+#always-present .sub {
+  letter-spacing: normal;
+  font-size: 13px;
+  text-align: center;
+}
 .center{text-align: center;}
 /*---------------------------------------
   Preloader section              
