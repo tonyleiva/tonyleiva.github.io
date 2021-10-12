@@ -1311,6 +1311,11 @@ Video section
   display: none;
 }
 
+#price .pricing__feature-list li.ver-mais:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 #price .pricing__feature-list li.inactive {
   text-decoration: line-through;
   color: #ffffff77;

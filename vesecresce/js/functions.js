@@ -52,6 +52,16 @@ function copyToClipboard(elementId) {
     document.execCommand('copy');
 }
 
+function showVerMaisGrupo() {
+	$(".ver-mais").css("display", "unset")
+	$(".list-item").css("display", "none")
+}
+
+function clickVerMaisGrupo(grupoId) {
+	$(`#${grupoId} .ver-mais`).css("display", "none")
+	$(`#${grupoId} .list-item`).css("display", "list-item")
+}
+
 async function trackingClick(itemID) {
 	$.ajax({
 		url: "/metric/trackingClick/",

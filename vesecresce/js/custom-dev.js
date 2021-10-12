@@ -33,6 +33,7 @@ $(document).ready(function () {
     $(".trainer-des").each(function() {
       $(this).css("width", "90%")
     })
+    showVerMaisGrupo()
   }
 
   /* template navigation
