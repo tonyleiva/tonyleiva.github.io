@@ -107,7 +107,7 @@ $(document).ready(function () {
     $(function () {
       jQuery(document).ready(function () {
         $('#home').backstretch([
-          "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8603_02.jpg",
+          "https://tonyleiva.github.io/vesecresce/images/fotos-capa1.jpg",
         ], { duration: 2000, fade: 750 });
       });
     })
