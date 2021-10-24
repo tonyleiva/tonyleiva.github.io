@@ -1,7 +1,7 @@
 /*tonyleivah*/
 function linkClick(linkId) {
 	$.ajax({
-		url: "/contact/linkClick/",
+		url: "/links/linkClick/",
 		type: "post",
 		data: "linkId=" + linkId,
 		success: () => { },
