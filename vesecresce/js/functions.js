@@ -3,7 +3,7 @@ function goToProduct() {
 	// window.open("https://www.sympla.com.br/programa-ve-se-cresce__1099946", "_blank")
 	
 	$('html, body').stop().animate({
-		scrollTop: $("#newsletter").offset().top - 30
+		scrollTop: $("#quero-anchor").offset().top - 30
 	}, 1000)
 
 	// var launchDatetime = getProductLaunchDatetime()
@@ -50,6 +50,16 @@ function copyToClipboard(elementId) {
     document.body.appendChild(el);
     el.select();
     document.execCommand('copy');
+}
+
+function showVerMaisGrupo() {
+	$(".ver-mais").css("display", "unset")
+	$(".list-item").css("display", "none")
+}
+
+function clickVerMaisGrupo(grupoId) {
+	$(`#${grupoId} .ver-mais`).css("display", "none")
+	$(`#${grupoId} .list-item`).css("display", "list-item")
 }
 
 async function trackingClick(itemID) {

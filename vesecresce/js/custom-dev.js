@@ -25,17 +25,21 @@ $(window).scroll(() => {
 $(document).ready(function () {
 
   if (isMobileBrowser()) {
-    $(".trainer-overlay").each(function () {
+    $(".trainer-overlay").each(function() {
       $(this).css("height", "45%")
       $(this).css("min-height", "230px")
       $(this).css("top", "unset")
     })
+    $(".trainer-des").each(function() {
+      $(this).css("width", "90%")
+    })
+    showVerMaisGrupo()
   }
 
   /* template navigation
   -----------------------------------------------*/
   $('.main-navigation').onePageNav({
-    scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
+    // scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
     scrollOffset: 75, //Height of Navigation Bar
     filter: ':not(.external)',
     changeHash: true
@@ -84,7 +88,6 @@ $(document).ready(function () {
      -----------------------------------------------*/
   function initParallax() {
     $('#blog').parallax("100%", 0.1);
-    $('#price').parallax("100%", 0.2);
   }
   initParallax();
 
@@ -104,7 +107,7 @@ $(document).ready(function () {
     $(function () {
       jQuery(document).ready(function () {
         $('#home').backstretch([
-          "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8603_02.jpg",
+          "https://tonyleiva.github.io/vesecresce/images/fotos-capa1.jpg",
         ], { duration: 2000, fade: 750 });
       });
     })

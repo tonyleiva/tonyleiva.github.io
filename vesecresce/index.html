@@ -35,11 +35,12 @@
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right main-navigation">
-				<li><a href="#home" class="smoothScroll">Inicio</a></li>
-				<li><a href="#overview" class="smoothScroll">Sobre</a></li>
-				<li><a href="#benefits" class="smoothScroll">Vantagens</a></li>
+				<!-- <li><a href="#home" class="smoothScroll">Inicio</a></li> -->
+				<li><a href="#timeline" class="smoothScroll">Sobre</a></li>
 				<li><a href="#trainer" class="smoothScroll">Equipe</a></li>
+				<li><a href="#program" class="smoothScroll">O programa</a></li>
 				<li><a href="#price" class="smoothScroll">Planos</a></li>
+				<li><a href="#benefits" class="smoothScroll">Vantagens</a></li>
 				<!-- <li><a href="#newsletter" class="smoothScroll">Inscrições</a></li> -->
 				<li><a href="#testimonial" class="smoothScroll">Depoimentos</a></li>
 			</ul>
@@ -63,8 +64,10 @@
 
 <section id="timeline">
 	<div class="container">
-		<h2 class="center">Até quando você vai pagar caro pela mudança que o Vê se Cresce te proporciona por muito menos?</h2>
-		<p class="center">EM TODOS OS PLANO VOCÊ CONSEGUE...<br></p>
+		<div class="section-header">
+			<h2>Até quando você vai pagar caro pela mudança que o Vê se Cresce te proporciona por muito menos?</h2>
+			<p>EM TODOS OS PLANO VOCÊ CONSEGUE...</p>
+		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="main-timeline">
@@ -119,40 +122,251 @@
 	</div>
 </section>
 
-<section id="overview" class="parallax-section">
+<section id="trainer" class="parallax-section">
 	<div class="container">
+		<div class="section-header">
+			<h2>Conheça nossa equipe</h2>
+		</div>
 		<div class="row">
-
 			<div class="col-md-offset-2 col-md-8 col-sm-12">
 				<div class="video-container">
 					<div class="video-cover">
-						<img src="images/vesecresce-092.jpg" class="img-responsive" alt="Overview">
-						<a href="javascript:;" class="video-cover-play" onclick="openVideoModal()"><i class="fa fa-caret-right"></i></a>
+						<img src="images/equipe-vsc.png" class="frame" alt="Ver vídeo">
+						<a href="javascript:;" class="video-cover-play" onclick="openVideoEquipeModal()"><i class="fa fa-caret-right"></i></a>
 					</div>
 				</div>
 				<blockquote class="wow fadeInUp" data-wow-delay="1s">Nutricionista, personal trainer e psicóloga. Qual a sua desculpa? Vem crescer com a gente!</blockquote>
 			</div>
+		</div>
+		<div class="section-header">
+			<h2 id="mais-sobre-nos">Um pouco mais sobre nós</h2>
+		</div>
+		<div class="row">
 
-			<!-- <div class="col-md-1"></div>
-
-			<div class="wow fadeInUp col-md-4 col-sm-12" data-wow-delay="0.5s">
-				<div class="overview-detail">
-					<h2>Vê Se Cresce</h2>
-					<p>Programa com duração de 4 semanas para você que deseja ganhar massa ou obter definição muscular.</p>
-					<p>Você será acompanhado em tempo integral por uma equipe multidisciplinar composta por nutricionista esportiva, personal trainer e mentora-meta cognitiva. Sim, tudo isso em um só programa!</p>
-					<a href="#benefits" id="goToBenefits" class="btn btn-default smoothScroll">VANTAGENS</a>
+			<div class="wow fadeInUp col-md-4 col-sm-6">
+				<div class="trainer-thumb">
+					<img src="images/equipe-stael.jpeg" class="img-responsive" alt="Nutri Stael">
+						<div class="trainer-overlay">
+							<div class="trainer-des">
+								<h2>Stael</h2>
+								<h3>Nutricionista Esportiva</h3>
+								<ul class="social-icon">
+									<li><a href="https://www.instagram.com/nutristael/" target="_blank" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.5s"></a></li>
+									<li><a href="https://www.facebook.com/nutristael/" target="_blank" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.5s"></a></li>
+									<li><a href="https://api.whatsapp.com/send?phone=5551983014696" target="_blank" class="fa fa-whatsapp wow fadeInUp" data-wow-delay="0.5s"></a></li>
+								</ul>
+							</div>
+						</div>
 				</div>
+				<p>Nutri Stael aqui. Sua especialista e mestre em nutrição esportiva e emagrecimento.</p>
 			</div>
 
-			<div class="col-md-1"></div> -->
+			<div class="wow fadeInUp col-md-4 col-sm-6">
+				<div class="trainer-thumb">
+					<img src="images/equipe-leti.jpg" class="img-responsive" alt="Psicóloga Letícia">
+						<div class="trainer-overlay">
+							<div class="trainer-des">
+								<h2>Letícia</h2>
+								<h3>Psicóloga</h3>
+								<ul class="social-icon">
+									<li><a href="https://www.instagram.com/contextospsi/" target="_blank" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.5s"></a></li>
+									<li><a href="https://api.whatsapp.com/send?phone=5551993461920" target="_blank" class="fa fa-whatsapp wow fadeInUp" data-wow-delay="0.5s"></a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<p>Olá. Eu sou a Letícia Souza e vou te ajudar com a mudança de hábitos!</p>
+			</div>
 
+			<div class="wow fadeInUp col-md-4 col-sm-6">
+				<div class="trainer-thumb">
+					<img src="images/equipe-carol.jpg" class="img-responsive" alt="Trainer Carol">
+						<div class="trainer-overlay">
+							<div class="trainer-des">
+								<h2>Carol</h2>
+								<h3>Personal Trainer</h3>
+								<ul class="social-icon">
+									<li><a href="https://www.instagram.com/carolinecimadon_personal/" target="_blank" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.5s"></a></li>
+									<li><a href="https://api.whatsapp.com/send?phone=5551992301517" target="_blank" class="fa fa-whatsapp wow fadeInUp" data-wow-delay="0.5s"></a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<p>Carol Cimadon. Sua personal trainer especialista em Musculação com foco em hipertrofia, definição e emagrecimento.</p>
+			</div>
+
+		</div>
+	</div>
+
+	<br>
+	<div id="program" class="container">
+		<div>
+			<div class="section-header">
+				<h2>Vê Se Cresce</h2>
+				<p>Um programa feito por vc e para vc</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<div id="video-vantagens" class="video-container">
+					<div class="video-cover">
+						<img src="images/video-vantagens.png" class="frame" alt="Ver vídeo">
+						<a href="javascript:;" class="video-cover-play" onclick="openVideoModal()"><i class="fa fa-caret-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- <section id="videoTwo" class="parallax-section">
+	<div class="container">
+		<div>
+			<div class="section-header">
+				<h2>Vê Se Cresce</h2>
+				<p>Um programa feito por vc e para vc</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<div id="video-vantagens" class="video-container">
+					<div class="video-cover">
+						<img src="images/vesecresce-092.jpg" class="frame" alt="Ver vídeo">
+						<a href="javascript:;" class="video-cover-play" onclick="openVideoModal()"><i class="fa fa-caret-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<section id="price">
+	<div class="container" id="quero-anchor">
+		<div class="row">
+
+			<div class="fadeInUp col-md-12 col-sm-12">
+				<h2>Adquira já seu grupo preferido</h2>
+			</div>
+
+			<div id="grupo-start" class="fadeInUp col-md-4 col-sm-6">
+				<div class="pricing__item">
+                    <h3 class="pricing__title">Grupo Start</h3>
+                    <div class="pricing__price"><span class="pricing__currency">R$</span>97</div>
+                    <ul class="pricing__feature-list">
+						<li class="pricing__feature ver-mais" onclick="clickVerMaisGrupo('grupo-start')">Ver mais <i class="fa fa-chevron-down"></i></li>
+						<li class="pricing__feature list-item active">Receitas exclusivas</li>
+						<li class="pricing__feature list-item active">Card de exercícios</li>
+						<li class="pricing__feature list-item active">Calendário de hábitos saudáveis</li>
+						<li class="pricing__feature list-item inactive">Anamnese de treino</li>
+						<li class="pricing__feature list-item inactive">Treino exclusivo</li>
+						<li class="pricing__feature list-item inactive">Plano alimentar</li>
+						<li class="pricing__feature list-item inactive">Ebook Plano para mudanças de hábitos</li>
+						<li class="pricing__feature list-item inactive">Grupo no whatapp</li>
+						<li class="pricing__feature list-item inactive">Videoaulas complementares</li>
+						<li class="pricing__feature list-item inactive">Acessoria semanal em grupo</li>
+                    </ul>
+                    <button class="pricing__action">Quero dar o Start</button>
+                </div>
+			</div>
+
+			<div id="grupo-fit" class="fadeInUp col-md-4 col-sm-6">
+				<div class="pricing__item">
+                    <h3 class="pricing__title">Grupo Fit</h3>
+                    <div class="pricing__price"><span class="pricing__currency">R$</span>167</div>                  
+                    <ul class="pricing__feature-list">
+                        <li class="pricing__feature ver-mais" onclick="clickVerMaisGrupo('grupo-fit')">Ver mais <i class="fa fa-chevron-down"></i></li>
+						<li class="pricing__feature list-item active">Receitas exclusivas</li>
+						<li class="pricing__feature list-item active">Card de exercícios</li>
+						<li class="pricing__feature list-item active">Calendário de hábitos saudáveis</li>
+						<li class="pricing__feature list-item active">Anamnese de treino</li>
+						<li class="pricing__feature list-item active">Treino exclusivo</li>
+						<li class="pricing__feature list-item active">Plano alimentar</li>
+						<li class="pricing__feature list-item active">Ebook Plano para mudanças de hábitos</li>
+						<li class="pricing__feature list-item active">Grupo no whatapp</li>
+						<li class="pricing__feature list-item active">Videoaulas complementares</li>
+						<li class="pricing__feature list-item inactive">Acessoria semanal em grupo</li>
+                    </ul>
+                    <button class="pricing__action">Quero ser Fit</button>
+                </div>
+			</div>
+
+			<div id="grupo-vip" class="fadeInUp col-md-4 col-sm-6">
+				<div class="pricing__item">
+                    <h3 class="pricing__title">Grupo VIP</h3>
+                    <div class="pricing__price"><span class="times">6x</span> <span class="pricing__currency">R$</span>297</div> 
+                    <ul class="pricing__feature-list">
+                        <li class="pricing__feature ver-mais" onclick="clickVerMaisGrupo('grupo-vip')">Ver mais <i class="fa fa-chevron-down"></i></li>
+						<li class="pricing__feature list-item active">Receitas exclusivas</li>
+						<li class="pricing__feature list-item active">Card de exercícios</li>
+						<li class="pricing__feature list-item active">Calendário de hábitos saudáveis</li>
+						<li class="pricing__feature list-item active">Anamnese de treino</li>
+						<li class="pricing__feature list-item active">Treino exclusivo</li>
+						<li class="pricing__feature list-item active">Plano alimentar</li>
+						<li class="pricing__feature list-item active">Ebook Plano para mudanças de hábitos</li>
+						<li class="pricing__feature list-item active">Grupo no whatapp</li>
+						<li class="pricing__feature list-item active">Videoaulas complementares</li>
+						<li class="pricing__feature list-item active">Acessoria semanal em grupo</li>
+                    </ul>
+                   <button class="pricing__action">Quero ser VIP</button>
+                </div>
+			</div>
+
+		</div>
+	</div>
+	<div class="container combos">
+		<div class="row">
+			<div class="fadeInUp col-md-12 col-sm-12">
+				<h2>Adicione a seu grupo consultorias com preços exclusivos!</h2>
+				<br>
+			</div>
+
+			<div class="fadeInUp col-md-12 col-sm-12 pacoteItem">
+				<a href="https://api.whatsapp.com/send?phone=5551983014696&text=Oi%20nutri.%20Vou%20me%20inscrever%20no%20V%C3%AA%20Se%20Cresce%20e%20gostaria%20de%20acrescentar%20ao%20programa%20uma%20consultoria%20contigo." target="_blank" class="xxx">
+					<div class="combo_description">
+						<div class="combo_icon"><i class="fa fa-chevron-right"></i></div>
+						<h2>Pacote nutri</h2>
+						<p>Se seu problema é definitivamente a dieta, que tal acrescentar uma consultoria personalizada com a nossa Nutri Stael por um preço especial? Consultoria on-line ou presencial, anamnese completa, avaliação da composição corporal, plano alimentar individualizado e muito mais.</p>
+						<p><b>Toque aqui</b> e fale com a nossa nutri!</p>
+					</div>
+				</a>
+			</div>
+			<div class="fadeInUp col-md-12 col-sm-12 pacoteItem">
+				<a href="https://api.whatsapp.com/send?phone=5551992301517&text=Oi%20Carol.%20Vou%20me%20inscrever%20no%20V%C3%AA%20Se%20Cresce%20e%20gostaria%20de%20acrescentar%20ao%20programa%20uma%20consultoria%20de%20treino%20contigo." target="_blank" class="xxx">
+					<div class="combo_description">
+						<div class="combo_icon"><i class="fa fa-chevron-right"></i></div>
+						<h2>Pacote personal</h2>
+						<p>Para você que têm dificuldade em treinar bem de verdade, não se sente segura e que está desmotivada e cansada de treinos padrão de academia, o meu meu trabalho como personal é implementar teus treinos individualizando e personalizando de acordo com teus objetivos e necessidades, com qualidade e segurança por um preço especial através da consultoria on-line via aplicativo com vídeos autodidata.</p>
+					</div>
+				</a>
+			</div>
+			<div class="fadeInUp col-md-12 col-sm-12 pacoteItem">
+				<a href="https://api.whatsapp.com/send?phone=5551993461920&text=Ol%C3%A1%20Let%C3%ADcia%21%20Vou%20me%20inscrever%20no%20V%C3%AA%20Se%20Cresce%20e%20gostaria%20de%20acrescentar%20ao%20programa%20uma%20consultoria%20contigo%21" target="_blank" class="xxx">
+					<div class="combo_description">
+						<div class="combo_icon"><i class="fa fa-chevron-right"></i></div>
+						<h2>Pacote psico</h2>
+						<p>Se você está buscando superar suas dificuldades para a mudança de hábitos, autoestima e bem estar. Que tal acrescentar uma consultoria personalizada com a nossa psicóloga Letícia por um preço especial? Consultoria on-line, fundamentada na perspectiva da TCC e sistêmica. Além de um plano terapêutico com estratégias personalizadas para atingir seu objetivo. Toque aqui e fale com a nossa psico!</p>
+					</div>
+				</a>
+			</div>
+			<div class="fadeInUp col-md-12 col-sm-12 pacoteItem">
+				<a href="https://api.whatsapp.com/send?phone=5551997687845&text=Ol%C3%A1%21%20Vou%20me%20inscrever%20no%20V%C3%AA%20Se%20Cresce%20e%20gostaria%20de%20acrescentar%20ao%20programa%20as%20aulas%20de%20dan%C3%A7a." target="_blank" class="xxx">
+					<div class="combo_description">
+						<div class="combo_icon"><i class="fa fa-chevron-right"></i></div>
+						<h2>Aulas de dança</h2>
+						<p>E pra você que sabe que precisa fazer uma atividade física, mas não gosta de de fazer academia nem treinar sozinho em casa. Adicione ao seu Programa aulas de bachata, forró, pagode ou salsa. Você pode optar pelas modalidades on-line ou presenciais, individual ou em grupo. Bora dançar comigo?</p>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
 
 <!-- The modals -->
+<div id="videoEquipeModal" class="modal">
+	<iframe id="videoEquipeFrame" src="https://www.youtube.com/embed/w3zMznXJmsE?enablejsapi=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <div id="videoModal" class="modal">
-	<iframe id="videoFrame" src="https://www.youtube.com/embed/wsaDaL0PXVM?enablejsapi=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe id="videoFrame" src="https://www.youtube.com/embed/F8oJGYtYED4?enablejsapi=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div id="moreInfoModal" class="modal">
 	<div onclick="goToTopFunction()" id="goToTopButton" title="Voltar ao topo"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
@@ -260,21 +474,6 @@
 
 			<div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.5s">
 				<div class="benefits-item">
-					<div class="benefits-icon"><i class="fa fa-toggle-right"></i></div>
-					<h3 class="benefits-title">AULÃO DE TREINO</h3>
-					<p>4 aulões de treino exclusivos com a personal Carol.</p>
-                </div>
-			</div>
-			<div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.5s">
-				<div class="benefits-item">
-					<div class="benefits-icon"><i class="fa fa-lock"></i></div>
-					<h3 class="benefits-title">TREINO EXCLUSIVO</h3>
-					<p>Elaborado de acordo com o objetivo desejado produzido pela personal Carol.</p>
-                </div>
-			</div>
-
-			<div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.5s">
-				<div class="benefits-item">
 					<div class="benefits-icon"><i class="fa fa-star"></i></div>
 					<h3 class="benefits-title">TREINOS NO APP</h3>
 					<p>Aplicativo exclusivo para acesso aos seus treinos.</p>
@@ -283,25 +482,17 @@
 
 			<div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.5s">
 				<div class="benefits-item">
-					<div class="benefits-icon"><i class="fa fa-video-camera"></i></div>
-					<h3 class="benefits-title">VÍDEOS DOS EXERCÍCIOS</h3>
-					<p>Exercícios disponibilizados em vídeos para que você execute de forma correta.</p>
+					<div class="benefits-icon"><i class="fa fa-key"></i></div>
+					<h3 class="benefits-title">PSICÓLOGA</h3>
+					<p>Áudios e tarefas diárias para mudança de comportamento.</p>
                 </div>
 			</div>
 
 			<div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.5s">
 				<div class="benefits-item">
-					<div class="benefits-icon"><i class="fa fa-toggle-down"></i></div>
-					<h3 class="benefits-title">LIVES SEMANAIS</h3>
-					<p>Aulas ao vivo e com convidados surpresa.</p>
-                </div>
-			</div>
-			
-			<div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.5s">
-				<div class="benefits-item">
-					<div class="benefits-icon"><i class="fa fa-key"></i></div>
-					<h3 class="benefits-title">PSICÓLOGA</h3>
-					<p>Áudios e tarefas diárias para mudança de comportamento.</p>
+					<div class="benefits-icon"><i class="fa fa-lock"></i></div>
+					<h3 class="benefits-title">TREINO EXCLUSIVO</h3>
+					<p>Elaborado de acordo com o objetivo desejado produzido pela personal Carol.</p>
                 </div>
 			</div>
 
@@ -321,58 +512,11 @@
                 </div>
 			</div>
 
-			<div class="wow fadeInUp col-md-12 col-sm-12">
+			<!-- <div class="wow fadeInUp col-md-12 col-sm-12">
 				<div class="benefits-btn">
 					<a href="javascript:;" class="btn btn-default" onclick="openMoreInfoModal()">PROGRAMAÇÃO COMPLETA</a>
 				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-
-<section id="trainer" class="parallax-section">
-	<div class="container">
-		<div class="row">
-
-			<div class="wow fadeInUp col-md-12 col-sm-12">
-				<h2>Equipe do Programa</h2>
-				<p>Um pouco mais sobre nós</p>
-			</div>
-
-			<div class="wow fadeInUp col-md-offset-2 col-md-4 col-sm-6">
-				<div class="trainer-thumb">
-					<img src="images/BoraGuria_LauBaldo-8572.jpg" class="img-responsive" alt="Nutri">
-						<div class="trainer-overlay">
-							<div class="trainer-des">
-								<h2>Stael</h2>
-								<h3>Nutricionista esportiva</h3>
-								<ul class="social-icon">
-									<li><a href="https://www.instagram.com/nutristael/" target="_blank" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.5s"></a></li>
-									<li><a href="https://www.facebook.com/nutristael/" target="_blank" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.5s"></a></li>
-									<li><a href="https://api.whatsapp.com/send?phone=5551983014696" target="_blank" class="fa fa-whatsapp wow fadeInUp" data-wow-delay="0.5s"></a></li>
-								</ul>
-							</div>
-						</div>
-				</div>
-				<p>Sua especialista e mestre em nutrição esportiva. Eu sou a nutri Stael!</p>
-			</div>
-
-			<div class="wow fadeInUp col-md-4 col-sm-6">
-				<div class="trainer-thumb">
-					<img src="images/BoraGuria_LauBaldo-8573_02.jpg" class="img-responsive" alt="Trainer">
-						<div class="trainer-overlay">
-							<div class="trainer-des">
-								<h2>Carol</h2>
-								<h3>Personal Trainer</h3>
-								<ul class="social-icon">
-									<li><a href="https://www.instagram.com/carolinecimadon_personal/" target="_blank" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.5s"></a></li>
-								</ul>
-							</div>
-						</div>
-				</div>
-				<p>Carol, personal trainer</p>
-			</div>
+			</div> -->
 
 		</div>
 	</div>
@@ -442,100 +586,6 @@
 	</div>
 </section>
 
-<section id="price">
-	<div class="container">
-		<div class="row">
-
-			<div class="fadeInUp col-md-12 col-sm-12">
-				<h2>Nossos planos</h2>
-				<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo.</p>
-			</div>
-
-			<div class="fadeInUp col-md-4 col-sm-6">
-				<div class="pricing__item">
-                    <h3 class="pricing__title">Plano Start</h3>
-                    <div class="pricing__price"><span class="times">12x</span> <span class="pricing__currency">R$</span>67</div>
-                    <ul class="pricing__feature-list">
-                        <li class="pricing__feature">RECEITAS EXCLUSIVAS</li>
-						<li class="pricing__feature">CARD DE EXERCÍCIOS</li>
-						<li class="pricing__feature">VÍDEO DOS EXERCÍCIOS</li>
-						<li class="pricing__feature">PLANO DE MUDANÇA DE HÁBITOS</li>
-						<li class="pricing__feature">LIVE SEMANAIS</li>
-						<li class="pricing__feature">INSTAGRAM EXCLUSIVO</li>
-                    </ul>
-                    <button class="pricing__action">Quero dar o Start</button>
-                </div>
-			</div>
-
-			<div class="fadeInUp col-md-4 col-sm-6">
-				<div class="pricing__item">
-                    <h3 class="pricing__title">Plano Fit</h3>
-                    <div class="pricing__price"><span class="times">12x</span> <span class="pricing__currency">R$</span>550</div>                  
-                    <ul class="pricing__feature-list">
-                        <li class="pricing__feature">Tudo do Plano Start</li>
-                        <li class="pricing__feature">GRUPO WHATSAPP</li>
-                        <li class="pricing__feature">AVALIAÇÃO NUTRICIONAL</li>
-                        <li class="pricing__feature">AVALIAÇÃO FISICA</li>
-                        <li class="pricing__feature">AVALIAÇÃO COMPORTAMENTAL</li>
-						<li class="pricing__feature">PLANO ALIMENTAR</li>
-						<li class="pricing__feature">TREINO EXCLUSIVO</li>
-                    </ul>
-                    <button class="pricing__action">Quero ser Fit</button>
-                </div>
-			</div>
-
-			<div class="fadeInUp col-md-4 col-sm-6">
-				<div class="pricing__item">
-                    <h3 class="pricing__title">Plano VIP</h3>
-                    <div class="pricing__price"><span class="times">12x</span> <span class="pricing__currency">R$</span>750</div> 
-                    <ul class="pricing__feature-list">
-                        <li class="pricing__feature">Tudo do Plano Fit</li>
-                        <li class="pricing__feature">ASSESSORIA EM GRUPO SEMANAL</li>
-                        <li class="pricing__feature">INGRESSO EVENTO DESAFIO VSC TOTAL 30*</li>
-                        <li class="pricing__feature">INGRESSO PARA TODOS OS EVENTOS DE WEBNAR VSC*</li>
-                    </ul>
-                   <button class="pricing__action">Quero ser VIP</button>
-                </div>
-			</div>
-
-		</div>
-	</div>
-	<div class="container combos">
-		<div class="row">
-			<div class="fadeInUp col-md-12 col-sm-12 yyy">
-				<a href="" class="xxx">
-					
-					<div class="combo_description">
-						<div class="combo_icon"><i class="fa fa-chevron-right"></i></div>
-						<h2>Pacote nutri</h2>
-						<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo. </p>
-					</div>
-				</a>
-			</div>
-			<div class="fadeInUp col-md-12 col-sm-12 yyy">
-				<a href="" class="xxx">
-					
-					<div class="combo_description">
-						<div class="combo_icon"><i class="fa fa-chevron-right"></i></div>
-						<h2>Pacote personal</h2>
-						<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo.</p>
-					</div>
-				</a>
-			</div>
-			<div class="fadeInUp col-md-12 col-sm-12 yyy">
-				<a href="" class="xxx">
-					
-					<div class="combo_description">
-						<div class="combo_icon"><i class="fa fa-chevron-right"></i></div>
-						<h2>Pacote psico</h2>
-						<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo.</p>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-</section>
-
 <section id="testimonial" class="parallax-section">
 	<div class="container previous">
 		<div class="row">
@@ -585,6 +635,12 @@
 
 				<div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
 					<i class="fa fa-quote-left"></i>
+					<h3>Pra mim está sendo muito bom o acompanhamento, é totalmente diferente, de tudo aquilo do que eu esperava e uma experiência muito boa, eu não esperava que fosse me ajudar tanto, é uma visão totalmente diferente, acabou me contribuindo muito pra mim tanto não só na parte da dieta né mas no meu dia a dia.</h3>
+					<h4>Sobre a psico Letícia</h4>
+				</div>
+
+				<div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
+					<i class="fa fa-quote-left"></i>
 					<h3>Simplesmente incrível, que personal e mulher maravilhosa, treinos excelentes e ainda para ser feito em casa, imagina na academia como deve ser hahahsh sensacional, da gosto de se exercitar, saber que trará resultados, nos da confiança e motivação ter treinos guiados por alguém tao competente e ao mesmo tempo tão simpática e afetiva, obrigada pelos treinos excelentes!</h3>
 					<h4>Sobre a profe Carol</h4>
 				</div>
@@ -593,6 +649,12 @@
 					<i class="fa fa-quote-left"></i>
 					<h3>Gente ela é incrível! Ela faz um plano alimentar de acordo com as necessidades e vontades, de uma maneira que da pra adaptar muito bem a rotina e que trás resultados incríveis! Deu super certo o acompanhamento, sempre que preciso de um help sou muito bem atendida! Sem palavras! Só elogios! Um trabalho incrível! To amando cada dia mais!</h3>
 					<h4>Sobre a nutri Stael</h4>
+				</div>
+
+				<div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
+					<i class="fa fa-quote-left"></i>
+					<h3>Bah eu nunca pensei que ia me ajudar tanto, nunca imaginei que ia conseguir dizer coisas que nunca contei pra ninguém e vi que isso ajudou muito, somos outras pessoas, agora a gente conversa a gente consegue se entender, antes não tinha diálogo. Não tenho palavras, isso melhorou muito a nossa família.</h3>
+					<h4>Sobre a psico Letícia</h4>
 				</div>
 
 				<div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
@@ -638,7 +700,10 @@
 	</div>
 </section> -->
 
-<div onclick="goToProduct()" id="always-present"><i class="fa fa-cart-plus"></i> EU QUERO!</div>
+<div onclick="goToProduct()" id="always-present">
+	<div><i class="fa fa-cart-plus"></i> EU QUERO!</div>
+	<div class="sub">a partir de R$97,00</div>
+</div>
 
 <footer>
 	<div class="container">
