@@ -93,17 +93,7 @@ $(document).ready(function () {
 
   /* home slider section
  -----------------------------------------------*/
-  if (isMobileBrowser()) {
-    $(function () {
-      jQuery(document).ready(function () {
-        $('#home').backstretch([
-          "https://github.com/tonyleiva/tonyleiva.github.io/raw/master/vesecresce/images/vesecresce-mobile-cover-cs.jpeg",
-          "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8572.jpg",
-          "https://tonyleiva.github.io/vesecresce/images/BoraGuria_LauBaldo-8573_02.jpg",
-        ], { duration: 2000, fade: 750 });
-      });
-    })
-  } else {
+  if (!isMobileBrowser()) {
     $(function () {
       jQuery(document).ready(function () {
         $('#home').backstretch([

@@ -271,19 +271,19 @@ a {
 -----------------------------------------*/
 
 #home {
-  background: 50% 0 repeat-y fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
+  /* background: 50% 0 repeat-y fixed; */
+  /* -webkit-background-size: cover; */
+  /* background-size: cover; */
+  /* background-position: center center; */
   color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
+  /* display: -webkit-box; */
+  /* display: -webkit-flex; */
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  /* display: flex; */
+  /* -webkit-box-align: center; */
+  /* -webkit-align-items: center; */
   -ms-flex-align: center;
-  align-items: center;
+  /* align-items: center; */
   height: 100vh;
 }
 
@@ -340,7 +340,7 @@ a {
 
 #home .content {
   position: absolute;
-  bottom: 45px;
+  bottom: 25px;
 }
 
 /*---------------------------------------
@@ -1666,7 +1666,7 @@ footer {
 
 @media (max-width: 980px) {
   #home {
-    height: 65vh;
+    /* height: 65vh; */
   }
   #trainer {
     text-align: center;
@@ -1751,7 +1751,7 @@ footer {
     margin-top: 0px;
   }
   #home img {
-    padding-top: 360px;
+    padding-top: 240px;
     max-width: 50%;
   }
   #home .btn {
@@ -1771,7 +1771,19 @@ footer {
 
 @media (max-width: 760px) {
   #home {
-    height: 100vh;
+    background-image: url(https://tonyleiva.github.io/vesecresce/images/fotos-capa1.jpg);
+    /* background-color: #cccccc; */
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #home .content{
+    bottom: unset;
+  }
+  #home>.container>.row>div {
+    height: unset;
   }
   #blog-header {
     height: 35vh;
